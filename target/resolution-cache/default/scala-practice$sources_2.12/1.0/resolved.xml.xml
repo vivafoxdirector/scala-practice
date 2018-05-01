@@ -4,7 +4,7 @@
 		module="scala-practice$sources_2.12"
 		revision="1.0"
 		status="integration"
-		publication="20180501203415"
+		publication="20180501214156"
 	/>
 	<configurations>
 		<conf name="compile" visibility="public" description=""/>
@@ -62,15 +62,6 @@
 		</dependency>
 		<dependency org="com.typesafe" name="config" rev="1.3.1" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="config" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.scalikejdbc" name="scalikejdbc-joda-time_2.12" rev="3.2.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="scalikejdbc-joda-time_2.12" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="joda-time" name="joda-time" rev="2.9.9" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="joda-time" type="src" ext="jar" conf="sources" e:classifier="sources"/>
-		</dependency>
-		<dependency org="org.joda" name="joda-convert" rev="1.9.2" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
-			<artifact name="joda-convert" type="src" ext="jar" conf="sources" e:classifier="sources"/>
 		</dependency>
 		<dependency org="com.h2database" name="h2" rev="1.4.197" transitive="false" conf="compile->default(compile);runtime->default(compile);test->default(compile);compile-internal->default(compile);runtime-internal->default(compile);test-internal->default(compile)">
 			<artifact name="h2" type="src" ext="jar" conf="sources" e:classifier="sources"/>

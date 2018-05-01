@@ -26,6 +26,26 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="SBT">
+      <state>
+        <projects_view>
+          <tree_state>
+            <PATH>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
+              </PATH_ELEMENT>
+              <PATH_ELEMENT>
+                <option name="myItemId" value="scala-practice" />
+                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
+              </PATH_ELEMENT>
+            </PATH>
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
   <component name="FavoritesManager">
     <favorites_list name="scala-practice" />
   </component>
@@ -44,8 +64,8 @@
       <file leaf-file-name="CurriedFuncMain.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/curried/CurriedFuncMain.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+            <state relative-caret-position="40">
+              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -54,13 +74,13 @@
       <file leaf-file-name="BasicSample.scala" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/BasicSample.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+            <state relative-caret-position="80">
+              <caret line="4" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding>
                 <element signature="e#32#52#0" expanded="true" />
-                <marker date="1525174576871" expanded="true" signature="362:531" ph="create table... members" />
-                <marker date="1525174576871" expanded="true" signature="685:756" ph="insert into members... " />
-                <marker date="1525174576871" expanded="true" signature="880:901" ph="select * fro... members" />
+                <marker date="1525175885670" expanded="true" signature="318:487" ph="create table... members" />
+                <marker date="1525175885670" expanded="true" signature="641:712" ph="insert into members... " />
+                <marker date="1525175885670" expanded="true" signature="836:857" ph="select * fro... members" />
               </folding>
             </state>
           </provider>
@@ -69,16 +89,47 @@
       <file leaf-file-name="SyntaxSupportSample.scala" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SyntaxSupportSample.scala">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+            <state relative-caret-position="120">
+              <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
               <folding>
                 <element signature="e#32#52#0" expanded="true" />
-                <marker date="1525174871128" expanded="true" signature="261:280" ph="create table... groups" />
-                <marker date="1525174871128" expanded="true" signature="261:429" ph="create table... groups" />
-                <marker date="1525174871128" expanded="true" signature="261:430" ph="create table... groups" />
-                <marker date="1525174871128" expanded="true" signature="490:510" ph="create table... members" />
-                <marker date="1525174871128" expanded="true" signature="490:743" ph="create table... members" />
+                <marker date="1525179281906" expanded="true" signature="310:329" ph="create table... groups" />
+                <marker date="1525179281906" expanded="true" signature="310:490" ph="create table... groups" />
+                <marker date="1525179281906" expanded="true" signature="310:491" ph="create table... groups" />
+                <marker date="1525179281906" expanded="true" signature="551:571" ph="create table... members" />
+                <marker date="1525179281906" expanded="true" signature="551:824" ph="create table... members" />
+                <marker date="1525179281906" expanded="true" signature="994:1082" ph="insert into ${Group.table}... " />
+                <marker date="1525179281906" expanded="true" signature="1271:1296" ph="SELECT ##... " />
+                <marker date="1525179281906" expanded="true" signature="1271:1323" ph="SELECT ${m.r... " />
+                <marker date="1525179281906" expanded="true" signature="1271:1347" ph="SELECT ${m.r... " />
+                <marker date="1525179281906" expanded="true" signature="1271:1405" ph="SELECT ${m.r... ${Member as m}" />
+                <marker date="1525179281906" expanded="true" signature="1271:1429" ph="SELECT ${m.r... ${Member as m}" />
+                <marker date="1525179281906" expanded="true" signature="1271:1470" ph="SELECT ${m.r... ${Member as m}" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="80">
+                <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+          <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="0">
+                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+                <folding />
+              </first_editor>
+              <second_editor>
+                <js_state />
+              </second_editor>
             </state>
           </provider>
         </entry>
@@ -87,8 +138,10 @@
         <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SQLSyntaxSupportTest.scala">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="140">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-              <folding />
+              <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
+              <folding>
+                <element signature="e#32#62#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -96,8 +149,18 @@
       <file leaf-file-name="build.sbt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build.sbt">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="200">
+              <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.conf" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="220">
-              <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+              <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -127,11 +190,12 @@
         <option value="$PROJECT_DIR$/src/main/scala/impli/TimeImplicits.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/io/yian/impli/TimeImplicits.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/io/yian/impli/ImplicitMain.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/io/yian/curried/CurriedFuncMain.scala" />
-        <option value="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SQLSyntaxSupportTest.scala" />
-        <option value="$PROJECT_DIR$/build.sbt" />
         <option value="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/ServiceMain.scala" />
+        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/BasicSample.scala" />
+        <option value="$PROJECT_DIR$/src/main/scala/io/yian/curried/CurriedFuncMain.scala" />
+        <option value="$PROJECT_DIR$/build.sbt" />
+        <option value="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SQLSyntaxSupportTest.scala" />
         <option value="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SyntaxSupportSample.scala" />
       </list>
     </option>
@@ -167,7 +231,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource />
+      <autoscrollFromSource ProjectPane="true" />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
@@ -181,6 +245,10 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="scala-practice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="External Libraries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -375,6 +443,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scala-practice" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
@@ -398,10 +488,11 @@
       <recent name="io.yian.db.scalikejdbc" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/resources" />
       <recent name="$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CurriedFuncMain">
+  <component name="RunManager" selected="Application.SyntaxSupportSample">
     <configuration default="false" name="TimeImplicits" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -430,6 +521,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="io.yian.curried.CurriedFuncMain" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="scala-practice" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="SyntaxSupportSample" type="Application" factoryName="Application" temporary="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="io.yian.db.scalikejdbc.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="io.yian.db.scalikejdbc.SyntaxSupportSample" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -937,19 +1048,21 @@
       <envs />
       <method />
     </configuration>
-    <list size="2">
+    <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Application.TimeImplicits" />
       <item index="1" class="java.lang.String" itemvalue="Application.CurriedFuncMain" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SyntaxSupportSample" />
     </list>
     <recent_temporary>
-      <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.CurriedFuncMain" />
-        <item index="1" class="java.lang.String" itemvalue="Application.TimeImplicits" />
+      <list size="3">
+        <item index="0" class="java.lang.String" itemvalue="Application.SyntaxSupportSample" />
+        <item index="1" class="java.lang.String" itemvalue="Application.CurriedFuncMain" />
+        <item index="2" class="java.lang.String" itemvalue="Application.TimeImplicits" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1525174456078" />
+    <option name="lastUpdateTimestamp" value="1525178517111" />
     <option name="availableProjects">
       <map>
         <entry>
@@ -977,7 +1090,7 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../../ref/akka-quickstart-scala" value="1524462325978" />
-        <entry key="$PROJECT_DIR$" value="1525174430673" />
+        <entry key="$PROJECT_DIR$" value="1525178496774" />
       </map>
     </option>
     <option name="externalProjectsViewState">
@@ -996,12 +1109,12 @@
       <updated>1525066265563</updated>
       <workItem from="1525066267791" duration="5706000" />
       <workItem from="1525075160420" duration="610000" />
-      <workItem from="1525174155446" duration="721000" />
+      <workItem from="1525174155446" duration="5024000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7037000" />
+    <option name="totallyTimeSpent" value="11340000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="960" y="23" width="960" height="1177" extended-state="0" />
@@ -1010,13 +1123,15 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="SBT Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32897604" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24945533" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1026,14 +1141,12 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3299539" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -1114,18 +1227,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="80">
+            <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+      <provider editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor>
+            <js_state />
+          </second_editor>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/curried/CurriedFuncMain.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+        <state relative-caret-position="40">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/BasicSample.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="4" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#32#52#0" expanded="true" />
+            <marker date="1525175885670" expanded="true" signature="318:487" ph="create table... members" />
+            <marker date="1525175885670" expanded="true" signature="641:712" ph="insert into members... " />
+            <marker date="1525175885670" expanded="true" signature="836:857" ph="select * fro... members" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalikejdbc/scalikejdbc-core_2.12/srcs/scalikejdbc-core_2.12-3.2.2-sources.jar!/scalikejdbc/WrappedResultSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="106" column="0" selection-start-line="106" selection-start-column="0" selection-end-line="106" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.ivy2/cache/org.scalikejdbc/scalikejdbc-joda-time_2.12/srcs/scalikejdbc-joda-time_2.12-3.2.2-sources.jar!/scalikejdbc/jodatime/JodaWrappedResultSet.scala">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.sbt">
       <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="10" column="4" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/application.conf">
+      <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
-          <caret line="11" column="4" selection-start-line="11" selection-start-column="4" selection-end-line="11" selection-end-column="4" />
+          <caret line="11" column="41" selection-start-line="11" selection-start-column="41" selection-end-line="11" selection-end-column="41" />
           <folding />
         </state>
       </provider>
@@ -1133,35 +1305,31 @@
     <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SQLSyntaxSupportTest.scala">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="140">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/BasicSample.scala">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="7" selection-start-line="9" selection-start-column="7" selection-end-line="9" selection-end-column="7" />
+          <caret line="7" column="43" selection-start-line="7" selection-start-column="43" selection-end-line="7" selection-end-column="43" />
           <folding>
-            <element signature="e#32#52#0" expanded="true" />
-            <marker date="1525174576871" expanded="true" signature="362:531" ph="create table... members" />
-            <marker date="1525174576871" expanded="true" signature="685:756" ph="insert into members... " />
-            <marker date="1525174576871" expanded="true" signature="880:901" ph="select * fro... members" />
+            <element signature="e#32#62#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/scala/io/yian/db/scalikejdbc/SyntaxSupportSample.scala">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="18" column="29" selection-start-line="18" selection-start-column="29" selection-end-line="18" selection-end-column="29" />
+        <state relative-caret-position="120">
+          <caret line="6" column="31" selection-start-line="6" selection-start-column="31" selection-end-line="6" selection-end-column="31" />
           <folding>
             <element signature="e#32#52#0" expanded="true" />
-            <marker date="1525174871128" expanded="true" signature="261:280" ph="create table... groups" />
-            <marker date="1525174871128" expanded="true" signature="261:429" ph="create table... groups" />
-            <marker date="1525174871128" expanded="true" signature="261:430" ph="create table... groups" />
-            <marker date="1525174871128" expanded="true" signature="490:510" ph="create table... members" />
-            <marker date="1525174871128" expanded="true" signature="490:743" ph="create table... members" />
+            <marker date="1525179281906" expanded="true" signature="310:329" ph="create table... groups" />
+            <marker date="1525179281906" expanded="true" signature="310:490" ph="create table... groups" />
+            <marker date="1525179281906" expanded="true" signature="310:491" ph="create table... groups" />
+            <marker date="1525179281906" expanded="true" signature="551:571" ph="create table... members" />
+            <marker date="1525179281906" expanded="true" signature="551:824" ph="create table... members" />
+            <marker date="1525179281906" expanded="true" signature="994:1082" ph="insert into ${Group.table}... " />
+            <marker date="1525179281906" expanded="true" signature="1271:1296" ph="SELECT ##... " />
+            <marker date="1525179281906" expanded="true" signature="1271:1323" ph="SELECT ${m.r... " />
+            <marker date="1525179281906" expanded="true" signature="1271:1347" ph="SELECT ${m.r... " />
+            <marker date="1525179281906" expanded="true" signature="1271:1405" ph="SELECT ${m.r... ${Member as m}" />
+            <marker date="1525179281906" expanded="true" signature="1271:1429" ph="SELECT ${m.r... ${Member as m}" />
+            <marker date="1525179281906" expanded="true" signature="1271:1470" ph="SELECT ${m.r... ${Member as m}" />
           </folding>
         </state>
       </provider>

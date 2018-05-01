@@ -1,0 +1,11 @@
+clean
+reload
+compile
+reload
+clean
+compile
+reload
+compile
+run
+eit
+exit

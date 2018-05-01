@@ -7,53 +7,8 @@
 		revision="1.0"
 		conf="test"
 		confs="compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool"
-		date="20180501203415"/>
+		date="20180501214156"/>
 	<dependencies>
-		<module organisation="org.scalikejdbc" name="scalikejdbc-joda-time_2.12">
-			<revision name="3.2.2" status="release" pubdate="20180325212238" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
-				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
-				<metadata-artifact status="no" details="" size="3515" time="0" location="/Users/foxdirector/.ivy2/cache/org.scalikejdbc/scalikejdbc-joda-time_2.12/ivy-3.2.2.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/org/scalikejdbc/scalikejdbc-joda-time_2.12/3.2.2/scalikejdbc-joda-time_2.12-3.2.2.pom"/>
-				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="3.2.2" rev-constraint-default="3.2.2" rev-constraint-dynamic="3.2.2" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="scalikejdbc-joda-time_2.12" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="4032" time="0" location="/Users/foxdirector/.ivy2/cache/org.scalikejdbc/scalikejdbc-joda-time_2.12/srcs/scalikejdbc-joda-time_2.12-3.2.2-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalikejdbc/scalikejdbc-joda-time_2.12/3.2.2/scalikejdbc-joda-time_2.12-3.2.2-sources.jar"/>
-					</artifact>
-					<artifact name="scalikejdbc-joda-time_2.12" type="jar" ext="jar" status="no" details="" size="24317" time="0" location="/Users/foxdirector/.ivy2/cache/org.scalikejdbc/scalikejdbc-joda-time_2.12/jars/scalikejdbc-joda-time_2.12-3.2.2.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/scalikejdbc/scalikejdbc-joda-time_2.12/3.2.2/scalikejdbc-joda-time_2.12-3.2.2.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="org.joda" name="joda-convert">
-			<revision name="1.9.2" status="release" pubdate="20170921010437" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-convert/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
-				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="6284" time="0" location="/Users/foxdirector/.ivy2/cache/org.joda/joda-convert/ivy-1.9.2.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.9.2/joda-convert-1.9.2.pom"/>
-				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="1.9.2" rev-constraint-default="1.9.2" rev-constraint-dynamic="1.9.2" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="joda-convert" type="jar" ext="jar" status="no" details="" size="117474" time="0" location="/Users/foxdirector/.ivy2/cache/org.joda/joda-convert/jars/joda-convert-1.9.2.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/org/joda/joda-convert/1.9.2/joda-convert-1.9.2.jar"/>
-					</artifact>
-					<artifact name="joda-convert" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="54616" time="0" location="/Users/foxdirector/.ivy2/cache/org.joda/joda-convert/srcs/joda-convert-1.9.2-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/org/joda/joda-convert/1.9.2/joda-convert-1.9.2-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
-		<module organisation="joda-time" name="joda-time">
-			<revision name="2.9.9" status="release" pubdate="20170323223313" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.joda.org/joda-time/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
-				<license name="Apache 2" url="http://www.apache.org/licenses/LICENSE-2.0.txt"/>
-				<metadata-artifact status="no" details="" size="6647" time="0" location="/Users/foxdirector/.ivy2/cache/joda-time/joda-time/ivy-2.9.9.xml" searched="false" origin-is-local="false" origin-location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.pom"/>
-				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="2.9.9" rev-constraint-default="2.9.9" rev-constraint-dynamic="2.9.9" callerrev="1.0"/>
-				<artifacts>
-					<artifact name="joda-time" type="jar" ext="jar" status="no" details="" size="634048" time="0" location="/Users/foxdirector/.ivy2/cache/joda-time/joda-time/jars/joda-time-2.9.9.jar">
-						<origin-location is-local="false" location="https://repo1.maven.org/maven2/joda-time/joda-time/2.9.9/joda-time-2.9.9.jar"/>
-					</artifact>
-					<artifact name="joda-time" type="src" ext="jar" extra-classifier="sources" status="no" details="" size="778815" time="0" location="/Users/foxdirector/.ivy2/cache/joda-time/joda-time/srcs/joda-time-2.9.9-sources.jar">
-						<origin-location is-local="false" location="https://jcenter.bintray.com/joda-time/joda-time/2.9.9/joda-time-2.9.9-sources.jar"/>
-					</artifact>
-				</artifacts>
-			</revision>
-		</module>
 		<module organisation="org.scalikejdbc" name="scalikejdbc-config_2.12">
 			<revision name="3.0.0" status="release" pubdate="20170520104852" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://scalikejdbc.org/" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="11">
 				<license name="Apache License, Version 2.0" url="http://www.apache.org/licenses/LICENSE-2.0.html"/>
@@ -160,7 +115,7 @@
 			</revision>
 		</module>
 		<module organisation="com.h2database" name="h2">
-			<revision name="1.4.197" status="release" pubdate="20180319052844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="16">
+			<revision name="1.4.197" status="release" pubdate="20180319052844" resolver="sbt-chain" artresolver="sbt-chain" homepage="http://www.h2database.com" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="13">
 				<license name="MPL 2.0 or EPL 1.0" url="http://h2database.com/html/license.html"/>
 				<metadata-artifact status="no" details="" size="2328" time="0" location="/Users/foxdirector/.ivy2/cache/com.h2database/h2/ivy-1.4.197.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/com/h2database/h2/1.4.197/h2-1.4.197.pom"/>
 				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="1.4.197" rev-constraint-default="1.4.197" rev-constraint-dynamic="1.4.197" callerrev="1.0"/>
@@ -190,7 +145,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-classic">
-			<revision name="1.2.3" status="release" pubdate="20170401042753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="17">
+			<revision name="1.2.3" status="release" pubdate="20170401042753" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="14">
 				<metadata-artifact status="no" details="" size="10196" time="0" location="/Users/foxdirector/.ivy2/cache/ch.qos.logback/logback-classic/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/ch/qos/logback/logback-classic/1.2.3/logback-classic-1.2.3.pom"/>
 				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0"/>
 				<artifacts>
@@ -204,7 +159,7 @@
 			</revision>
 		</module>
 		<module organisation="ch.qos.logback" name="logback-core">
-			<revision name="1.2.3" status="release" pubdate="20170401042715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="18">
+			<revision name="1.2.3" status="release" pubdate="20170401042715" resolver="sbt-chain" artresolver="sbt-chain" homepage="" downloaded="false" searched="false" default="false" conf="default, compile, runtime, default(compile), master" position="15">
 				<metadata-artifact status="no" details="" size="9156" time="0" location="/Users/foxdirector/.ivy2/cache/ch.qos.logback/logback-core/ivy-1.2.3.xml" searched="false" origin-is-local="false" origin-location="https://jcenter.bintray.com/ch/qos/logback/logback-core/1.2.3/logback-core-1.2.3.pom"/>
 				<caller organisation="default" name="scala-practice$sources_2.12" conf="test, compile, runtime" rev="1.2.3" rev-constraint-default="1.2.3" rev-constraint-dynamic="1.2.3" callerrev="1.0"/>
 				<artifacts>

@@ -8,7 +8,7 @@
 [debug] == resolving dependencies for default#scala-practice$sources_2.12;1.0 [compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang#scala-library;2.12.6 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-library;2.12.6 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4a5d5a1
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@68936a2b
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-library;2.12.6
 [debug] 	found org.scala-lang#scala-library;2.12.6 in sbt-chain
 [debug] 	[2.12.6] org.scala-lang#scala-library;2.12.6
@@ -17,7 +17,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang#scala-library;2.12.6 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc_2.12;3.2.2 [compile->default(compile)]
 [info] Resolving org.scalikejdbc#scalikejdbc_2.12;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1f3459f2
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@36d23a83
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc_2.12;3.2.2
 [debug] 	found org.scalikejdbc#scalikejdbc_2.12;3.2.2 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc_2.12;3.2.2 [compile->runtime]
@@ -25,7 +25,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc_2.12;3.2.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-core_2.12;3.2.2 [compile->default(compile)]
 [info] Resolving org.scalikejdbc#scalikejdbc-core_2.12;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3ab5d9dc
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7dce9287
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-core_2.12;3.2.2
 [debug] 	found org.scalikejdbc#scalikejdbc-core_2.12;3.2.2 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-core_2.12;3.2.2 [compile->runtime]
@@ -33,7 +33,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-core_2.12;3.2.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-dbcp2;2.2.0 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-dbcp2;2.2.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@61fb62bf
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@7d76fc62
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-dbcp2;2.2.0
 [debug] 	found org.apache.commons#commons-dbcp2;2.2.0 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-dbcp2;2.2.0 [compile->runtime]
@@ -41,7 +41,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-dbcp2;2.2.0 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-pool2;2.5.0 [compile->default(compile)]
 [info] Resolving org.apache.commons#commons-pool2;2.5.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5d5e497f
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1351c57
 [debug] sbt-chain: module revision found in cache: org.apache.commons#commons-pool2;2.5.0
 [debug] 	found org.apache.commons#commons-pool2;2.5.0 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-pool2;2.5.0 [compile->runtime]
@@ -49,7 +49,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.apache.commons#commons-pool2;2.5.0 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->commons-logging#commons-logging;1.2 [compile->default(compile)]
 [info] Resolving commons-logging#commons-logging;1.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@51598dd0
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@2fc5a95e
 [debug] sbt-chain: module revision found in cache: commons-logging#commons-logging;1.2
 [debug] 	found commons-logging#commons-logging;1.2 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->commons-logging#commons-logging;1.2 [compile->runtime]
@@ -57,7 +57,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->commons-logging#commons-logging;1.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.slf4j#slf4j-api;1.7.25 [compile->default(compile)]
 [info] Resolving org.slf4j#slf4j-api;1.7.25 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3f8677ec
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@39090df0
 [debug] sbt-chain: module revision found in cache: org.slf4j#slf4j-api;1.7.25
 [debug] 	found org.slf4j#slf4j-api;1.7.25 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.slf4j#slf4j-api;1.7.25 [compile->runtime]
@@ -65,7 +65,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.slf4j#slf4j-api;1.7.25 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 [compile->default(compile)]
 [info] Resolving org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@26813074
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@8ce70a9
 [debug] sbt-chain: module revision found in cache: org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0
 [debug] 	found org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 [compile->runtime]
@@ -73,7 +73,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang.modules#scala-parser-combinators_2.12;1.1.0 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2 [compile->default(compile)]
 [info] Resolving org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@5c774c9b
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@52e58dba
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2
 [debug] 	found org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2 [compile->runtime]
@@ -81,7 +81,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation_2.12;3.2.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2 [compile->default(compile)]
 [info] Resolving org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@10fcfaba
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e3e97a7
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2
 [debug] 	found org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2 [compile->runtime]
@@ -89,7 +89,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-interpolation-macro_2.12;3.2.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang#scala-reflect;2.12.5 [compile->default(compile)]
 [info] Resolving org.scala-lang#scala-reflect;2.12.5 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@354b5c1d
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@701f9949
 [debug] sbt-chain: module revision found in cache: org.scala-lang#scala-reflect;2.12.5
 [debug] 	found org.scala-lang#scala-reflect;2.12.5 in sbt-chain
 [debug] 	[2.12.5] org.scala-lang#scala-reflect;2.12.5
@@ -98,7 +98,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scala-lang#scala-reflect;2.12.5 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-config_2.12;3.0.0 [compile->default(compile)]
 [info] Resolving org.scalikejdbc#scalikejdbc-config_2.12;3.0.0 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@760d2a75
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@80e8d49
 [debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-config_2.12;3.0.0
 [debug] 	found org.scalikejdbc#scalikejdbc-config_2.12;3.0.0 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-config_2.12;3.0.0 [compile->runtime]
@@ -106,39 +106,15 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-config_2.12;3.0.0 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->default(compile)]
 [info] Resolving com.typesafe#config;1.3.1 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3cd9ed72
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@4011567f
 [debug] sbt-chain: module revision found in cache: com.typesafe#config;1.3.1
 [debug] 	found com.typesafe#config;1.3.1 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[info] Resolving org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3b1d6e8b
-[debug] sbt-chain: module revision found in cache: org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2
-[debug] 	found org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 in sbt-chain
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[info] Resolving joda-time#joda-time;2.9.9 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@74385688
-[debug] sbt-chain: module revision found in cache: joda-time#joda-time;2.9.9
-[debug] 	found joda-time#joda-time;2.9.9 in sbt-chain
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[info] Resolving org.joda#joda-convert;1.9.2 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@652b7479
-[debug] sbt-chain: module revision found in cache: org.joda#joda-convert;1.9.2
-[debug] 	found org.joda#joda-convert;1.9.2 in sbt-chain
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [info] Resolving com.h2database#h2;1.4.197 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@18681c29
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@43f91675
 [debug] sbt-chain: module revision found in cache: com.h2database#h2;1.4.197
 [debug] 	found com.h2database#h2;1.4.197 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
@@ -146,7 +122,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->ch.qos.logback#logback-classic;1.2.3 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-classic;1.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@203588c
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@70c2322
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-classic;1.2.3
 [debug] 	found ch.qos.logback#logback-classic;1.2.3 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->ch.qos.logback#logback-classic;1.2.3 [compile->runtime]
@@ -154,7 +130,7 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->ch.qos.logback#logback-classic;1.2.3 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->ch.qos.logback#logback-core;1.2.3 [compile->default(compile)]
 [info] Resolving ch.qos.logback#logback-core;1.2.3 ...
-[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@602130a9
+[debug] sbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@3e9e283e
 [debug] sbt-chain: module revision found in cache: ch.qos.logback#logback-core;1.2.3
 [debug] 	found ch.qos.logback#logback-core;1.2.3 in sbt-chain
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->ch.qos.logback#logback-core;1.2.3 [compile->runtime]
@@ -215,18 +191,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->compile]
@@ -291,18 +255,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->compile]
@@ -371,18 +323,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->compile]
@@ -447,18 +387,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->compile]
@@ -523,18 +451,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->compile]
@@ -606,18 +522,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->compile]
@@ -684,18 +588,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile-internal->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile-internal->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile-internal->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile-internal->compile]
@@ -764,18 +656,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->compile]
@@ -840,18 +720,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->compile]
@@ -917,18 +785,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime-internal->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime-internal->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime-internal->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime-internal->compile]
@@ -998,18 +854,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [compile->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [compile->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [compile->compile]
@@ -1074,18 +918,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [runtime->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [runtime->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [runtime->compile]
@@ -1150,18 +982,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test->compile]
@@ -1228,18 +1048,6 @@
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test-internal->compile]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.typesafe#config;1.3.1 [test-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2 [test-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->joda-time#joda-time;2.9.9 [test-internal->master]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test-internal->default(compile)]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test-internal->runtime]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test-internal->compile]
-[debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->org.joda#joda-convert;1.9.2 [test-internal->master]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test-internal->default(compile)]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test-internal->runtime]
 [debug] == resolving dependencies default#scala-practice$sources_2.12;1.0->com.h2database#h2;1.4.197 [test-internal->compile]
@@ -1327,12 +1135,6 @@
 [debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-config_2.12;3.0.0!scalikejdbc-config_2.12.jar
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.1!config.jar
 [debug] 	[NOT REQUIRED] com.typesafe#config;1.3.1!config.jar(src)
-[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2!scalikejdbc-joda-time_2.12.jar(src)
-[debug] 	[NOT REQUIRED] org.scalikejdbc#scalikejdbc-joda-time_2.12;3.2.2!scalikejdbc-joda-time_2.12.jar
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar
-[debug] 	[NOT REQUIRED] joda-time#joda-time;2.9.9!joda-time.jar(src)
-[debug] 	[NOT REQUIRED] org.joda#joda-convert;1.9.2!joda-convert.jar
-[debug] 	[NOT REQUIRED] org.joda#joda-convert;1.9.2!joda-convert.jar(src)
 [debug] 	[NOT REQUIRED] com.h2database#h2;1.4.197!h2.jar(src)
 [debug] 	[NOT REQUIRED] com.h2database#h2;1.4.197!h2.jar
 [debug] 	[NOT REQUIRED] ch.qos.logback#logback-classic;1.2.3!logback-classic.jar
@@ -1343,7 +1145,7 @@
 [debug] 	[NOT REQUIRED] org.scala-lang#scala-reflect;2.12.6!scala-reflect.jar(src)
 [debug] 	[NOT REQUIRED] org.scala-lang.modules#scala-xml_2.12;1.0.6!scala-xml_2.12.jar(src)
 [debug] 	[NOT REQUIRED] jline#jline;2.14.6!jline.jar(src)
-[debug] :: resolution report :: resolve 232ms :: artifacts dl 22ms
+[debug] :: resolution report :: resolve 189ms :: artifacts dl 22ms
 [debug] 	report for default#scala-practice$sources_2.12;1.0 compile produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-compile.xml
 [debug] 	report for default#scala-practice$sources_2.12;1.0 runtime produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-runtime.xml
 [debug] 	report for default#scala-practice$sources_2.12;1.0 test produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-test.xml
@@ -1357,4 +1159,4 @@
 [debug] 	report for default#scala-practice$sources_2.12;1.0 docs produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-docs.xml
 [debug] 	report for default#scala-practice$sources_2.12;1.0 pom produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-pom.xml
 [debug] 	report for default#scala-practice$sources_2.12;1.0 scala-tool produced in /Users/foxdirector/git/yian/scala-practice/target/resolution-cache/reports/default-scala-practice$sources_2.12-scala-tool.xml
-[debug] 	resolve done (232ms resolve - 22ms download)
+[debug] 	resolve done (189ms resolve - 22ms download)

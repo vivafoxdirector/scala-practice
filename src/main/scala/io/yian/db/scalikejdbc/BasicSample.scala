@@ -4,7 +4,6 @@ import scalikejdbc._
 import scalikejdbc.config._
 
 /**
-  * Created by foxdirector on 2018. 4. 30..
   * 참조 : https://blog.tiqwab.com/2017/06/04/scalikejdbc.html
   */
 object BasicSample extends App {
