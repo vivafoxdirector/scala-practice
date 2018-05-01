@@ -1,13 +1,14 @@
 package io.yian.db.scalikejdbc
 
-import scalikejdbc._
-import scalikejdbc.config._
+import java.time.ZonedDateTime
 
-/**
-  * 참조: http://scalikejdbc.org/
-  * 참조: https://blog.tiqwab.com/2017/06/04/scalikejdbc.html
-  */
-object SyntaxSupportSample extends App{
+import scalikejdbc.config._
+import scalikejdbc._
+
+// 내용 : QueryDSL (Domain-Specific Language)
+// 참조 : http://scalikejdbc.org/documentation/query-dsl.html
+
+object QuerySample extends App {
     DBs.setupAll
 
     DB autoCommit { implicit session =>
@@ -30,29 +31,27 @@ object SyntaxSupportSample extends App{
     }
 
     DB localTx { implicit session =>
-        val g = Group.column
+        val (m, g) = (Member.column, Group.column)
         Seq("group1", "group2") foreach { name =>
-            sql"insert into ${Group.table} (${g.name}, ${g.createdAt}) values ($name, current_timestamp)".update.apply
+            withSQL {
+                insert.into(Group).columns(g.name, g.createdAt).values(name, ZonedDateTime.now)
+            }.update.apply
         }
-
-        val m = Member.column
-        Seq(("Alice", 1), ("Bob", 1), ("Chris", 2)) foreach {
+        Seq(("Alice",1), ("Bob",1), ("Chris",2)) foreach {
             case (name, groupId) =>
-                sql"insert into ${Member.table} (${m.name}, ${m.groupId}, ${m.createdAt}) values ($name, $groupId, CURRENT_TIMESTAMP)".update.apply
+                withSQL {
+                    insert.into(Member).columns(m.name, m.groupId, m.createdAt).values(name, groupId, ZonedDateTime.now)
+                }.update.apply
         }
     }
 
     DB readOnly { implicit session =>
+        val id = 1
         val (m, g) = (Member.syntax("m"), Group.syntax("g"))
-        val member =
-            sql"""
-                  SELECT
-                  ${m.result.*}, ${g.result.*}
-                  FROM
-                  ${Member as m} inner join ${Group as g}
-                  WHERE
-                  ${m.groupId} = ${g.id}
-            """.map(Member(m.resultName, g.resultName)(_)).first.apply
+        val member = withSQL {
+            select.from(Member as m).innerJoin(Group as g).on(m.groupId, g.id)
+                    .where.eq(m.id, id)
+        }.map(Member(m.resultName, g.resultName)(_)).single.apply
         println(member)
     }
 }

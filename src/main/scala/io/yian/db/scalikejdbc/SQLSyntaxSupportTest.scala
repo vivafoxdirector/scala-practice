@@ -4,9 +4,6 @@ import java.time.ZonedDateTime
 
 import scalikejdbc._
 
-/**
-  * Created by foxdirector on 2018. 4. 30..
-  */
 case class Group(id:Long, name: String, createdAt: ZonedDateTime)
 
 object Group extends SQLSyntaxSupport[Group] {
@@ -26,6 +23,6 @@ object Member extends SQLSyntaxSupport[Member] {
 
     def apply(m: ResultName[Member], g: ResultName[Group])(rs: WrappedResultSet): Member = {
         val group = Group(g)(rs)
-        Member(rs.long(m.id), rs.stringOpt(m.name), rs.long(m.groupId), group, rs.zonedDateTime(m.c("createdAt")))
+        Member(rs.long(m.id), rs.stringOpt(m.name), rs.long(m.groupId), group, rs.zonedDateTime(m.createdAt))
     }
 }
