@@ -31,3 +31,7 @@ clean
 compile
 run
 exit
+compile
+ls
+run
+exit

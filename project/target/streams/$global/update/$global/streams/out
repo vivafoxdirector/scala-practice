@@ -1,4 +1,4 @@
-[0m[[0minfo[0m] [0mUpdating {file:/Users/foxdirector/git/yian/scala-practice/project/}scala-practice-build...[0m
+[0m[[0minfo[0m] [0mUpdating {file:/home/foxdirector/git/yian/scala-practice/project/}scala-practice-build...[0m
 [0m[[0mdebug[0m] [0m:: resolving dependencies :: default#scala-practice-build;0.1-SNAPSHOT[0m
 [0m[[0mdebug[0m] [0m	confs: [compile, runtime, test, provided, optional, compile-internal, runtime-internal, test-internal, plugin, sources, docs, pom, scala-tool][0m
 [0m[[0mdebug[0m] [0m	validate = true[0m
@@ -16,7 +16,7 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#scala-practice-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#scala-practice-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.4 [provided->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-lang#scala-library;2.10.4 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@1842b7d2[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: sbt.ivyint.MergedDescriptors@575895a1[0m
 [0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-lang#scala-library;2.10.4[0m
 [0m[[0mdebug[0m] [0m	found org.scala-lang#scala-library;2.10.4 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[2.10.4] org.scala-lang#scala-library;2.10.4[0m
@@ -1766,19 +1766,19 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#apply-macro;0.13.8!apply-macro.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.4!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 670ms :: artifacts dl 24ms[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT compile produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-compile.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT runtime produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-runtime.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT test produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-test.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT provided produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-provided.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT optional produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-optional.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT compile-internal produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-compile-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT runtime-internal produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-runtime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT test-internal produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-test-internal.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT plugin produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-plugin.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT sources produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-sources.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT docs produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-docs.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT pom produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-pom.xml[0m
-[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT scala-tool produced in /Users/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-scala-tool.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (670ms resolve - 24ms download)[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3205ms :: artifacts dl 91ms[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT compile produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-compile.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT runtime produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-runtime.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT test produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-test.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT provided produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-provided.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT optional produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-optional.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT compile-internal produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-compile-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT runtime-internal produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-runtime-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT test-internal produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-test-internal.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT plugin produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-plugin.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT sources produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-sources.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT docs produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-docs.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT pom produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-pom.xml[0m
+[0m[[0mdebug[0m] [0m	report for default#scala-practice-build;0.1-SNAPSHOT scala-tool produced in /home/foxdirector/git/yian/scala-practice/project/target/resolution-cache/reports/default-scala-practice-build-scala-tool.xml[0m
+[0m[[0mdebug[0m] [0m	resolve done (3205ms resolve - 91ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
