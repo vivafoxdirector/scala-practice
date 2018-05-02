@@ -1,0 +1,13 @@
+bin/
+**/bin/
+build/
+**/build/
+.gradle/
+**/.gradle/
+.settings/
+**/.settings/
+.idea/
+**/.idea/
+**/gradle
+project/
+target/
