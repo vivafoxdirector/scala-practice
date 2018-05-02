@@ -137,6 +137,30 @@ trait Agiler extends Engineer {
   }
 }
 /************************************/
+class Employee {
+  println("Employee")
+}
+trait JuniorEmployee extends Employee {
+  println("JuniorEmployee")
+}
+trait SeniorEmployee extends Employee {
+  println("SeniorEmployee")
+}
+trait Manager extends SeniorEmployee {
+  println("Manager")
+}
+
+class Worker extends Employee with JuniorEmployee with Manager
+
+/*
+Employee: Employee->AnyRef->Any
+JuniorEmployee: JuniorEmployee->Employee->AnyRef->Any
+SeniorEmployee: SeniorEmployee->Employee->AnyRef->Any
+Manger: Manager->SeniorEmployee->Employee->AnyRef->Any
+Worker: Worker->Manager->SeniorEmployee->JuniorEmployee->Employee->AnyRef->Any
+*/
+
+/************************************/
 object Trait extends App {
   val d = new Staff("Yian") with Designer
   d.coding
@@ -175,4 +199,6 @@ object Trait extends App {
   println("--------------------------------")
   val pe = new Member with Coder with Agiler
   pe.work(60)
+  println("--------------------------------")
+  val w = new Worker
 }
