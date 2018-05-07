@@ -1,4 +1,4 @@
-import io.yian.function
+//import io.yian.function
 
 // ref: http://www.atmarkit.co.jp/ait/articles/1204/05/news126_3.html
 object Function extends App {
@@ -90,5 +90,84 @@ object Function extends App {
 
   val func9:(Int) => Int = func7(_, 5)
   println(func9(2))
+
+  println("==================================")
+  println("============ Closure =============")
+
+  def counter() = {
+    var count = 0
+    () => {
+      count += 1
+      count
+    }
+  }
+
+  val c1 = counter()
+  println(c1())
+  println(c1())
+  println(c1())
+  
+  println("-------------Fail-----------------");
+
+  def counter2:(Int)=>Int = {
+    var count = 0
+    (m:Int) => {
+      count += 1
+      count += m
+      count
+    }
+  }
+
+  val c2 = counter2(_)
+
+  println(c2(2))
+  println(c2(2))
+  println(c2(2))
+  
+  println("------------Fail------------------");
+
+  def counter3()(m:Int) = {
+    var count = 0
+    () => {
+      count += 1
+      count
+    }
+  }
+
+  val c3 = counter3()(_)
+  println(c3(1))
+
+  println("------------Success------------------");
+
+  def counter4() = {
+    var count = 0
+    (m:Int) => {
+      count += 1
+      count += m
+      count
+    }
+  }
+
+  val c4 = counter4()
+  println(c4(1))
+  println(c4(1))
+  println(c4(1))
+
+  println("---------------------------------");
+
+  def printOverlength(s:String) = {
+    val len = s.length
+    (xs:List[String]) => {
+      for (e <- xs; if e.length > len ) {
+        println(e + ":" + (e.length - len))
+      }
+    }
+  }
+
+  val printOverFoo = printOverlength("AriAri")
+  printOverFoo(List("Bar", "YianYian", "Foo", "HogeHoge"))
+
+  println("==================================")
+  println("========== local function ===========")
 
 }
