@@ -170,4 +170,13 @@ object Function extends App {
   println("==================================")
   println("========== local function ===========")
 
+  def showLanguage(title:String, langList:List[String]) : Unit = {
+    def printLang(item:String) = {
+      println(title + ":" + item)
+    }
+
+    for (lang <- langList) printLang(lang)
+  }
+
+  showLanguage("Programming Language", List("Java", "Scala", "Ruby"))
 }
