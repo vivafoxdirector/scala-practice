@@ -45,6 +45,11 @@ object Orange {
   }
 }
 
+//---------------------------------------
+// Case Class use instead unapply constructor method
+case class Ringo(name:String)
+case class Abokado(name:String)
+
 object Main extends App {
   val p = new Programmer("Scala");
   p.coding()
@@ -102,6 +107,8 @@ object Main extends App {
       case Apple => println("Apple")
       case Mikan => println("Mikan")
       case Orange("DEKOPON") => println("Orage.name=DEKOPON")
+      case Ringo(name) => println("Apple.name="+name)
+      case Abokado("DEKOPON") => println("ABOKADO")
       case _ => println("other")
     }
   }
@@ -112,4 +119,10 @@ object Main extends App {
   matchTest(Apple)
   matchTest(Mikan)
   matchTest("hello")
+
+  println("-----------------------------------")
+  println("-- pattern match used case class intead unapply");
+
+  matchTest(Ringo("Ringo"))
+  matchTest(Abokado("DEKOPON"))
 }
