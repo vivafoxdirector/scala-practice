@@ -1,4 +1,4 @@
-package io.yian.`implicit`
+//package io.yian.`implicit`
 
 // ImplicitClass는 직접 생성하지 않고 예제와 같이
 // object안에서 생성이 가능하다.
@@ -43,4 +43,6 @@ object ImplicitMain extends App{
     implicit val defaultList = List(1,2,3)
     def curryFunc(x:Int, s:String)(z:Float)(implicit xs:List[Int]):String = (s * x) + z + xs.sum
     println(curryFunc(1, "Hoge")(0.3f))
+    val cf = curryFunc(0.3f)
+    println(cf(1, "Hoge"))
 }
