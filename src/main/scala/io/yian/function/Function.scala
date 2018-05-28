@@ -5,6 +5,9 @@ object Function extends App {
   // Function Object
   // (value name: type_name) => function body
   //
+  def func0(x:Int, y:Int) = x+y
+  println(func0(1, 2))
+
   val func1 = (x:Int, y:Int) => x + y
   println(func1(1, 2))
   println("---------------------------------");
@@ -32,7 +35,7 @@ object Function extends App {
   val func4:Function0[Int, Int, Int] = (x:Int, y:Int) => x + y
   println(func4(1, 2))
   */
-  println("==================================")
+  println("============Curried================")
 
   def calc(f:(Int, Int) => Int, num: Int) : Int = f(num, num)
   calc((x, y) => x+ y, 10)
