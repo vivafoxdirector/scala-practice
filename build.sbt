@@ -9,8 +9,8 @@ libraryDependencies ++= Seq(
     "ch.qos.logback"  %  "logback-classic"   % "1.2.3",
 
 	// Akka
-	"com.typesafe.akka" %% "akka-actor" % "2.4.2"
+	"com.typesafe.akka" %% "akka-actor" % "2.4.2"//,
 
-
+	// Akka-Http
+	//"com.typesafe.akka" %% "akka-http-experimental" % "2.4.11"
 )
-    
