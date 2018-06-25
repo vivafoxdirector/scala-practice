@@ -1,6 +1,7 @@
 //import io.yian.function
 
 // ref: http://www.atmarkit.co.jp/ait/articles/1204/05/news126_3.html
+// ref: https://gist.github.com/gakuzzzz/10104162
 object Function extends App {
   // Function Object
   // (value name: type_name) => function body
@@ -22,6 +23,24 @@ object Function extends App {
   println(func3(1, 2))
   println("---------------------------------");
 
+  // Function is Object
+  // ref: https://twitter.github.io/scala_school/ko/basics2.html
+  val func31:Function1[Int,String] = new Function1[Int, String] {
+    def apply(arg:Int):String = arg.toString
+  }
+  println("func31: " + func31.apply(10))
+
+  val func32:(Int)=>String = new Function1[Int, String] {
+    def apply(arg:Int):String = arg.toString
+  }
+  println("func32: " + func32.apply(10))
+
+  class func33 extends Function1[Int, String] {
+    def apply(arg:Int):String = arg.toString
+  }
+
+  val f33 = new func33
+  println("func33: " + f33(10))
   // Placeholder syntax
   val func4: (Int, Int) => Int = _ + _
   println(func4(1,2))
@@ -35,6 +54,7 @@ object Function extends App {
   val func4:Function0[Int, Int, Int] = (x:Int, y:Int) => x + y
   println(func4(1, 2))
   */
+
   println("============Curried================")
 
   def calc(f:(Int, Int) => Int, num: Int) : Int = f(num, num)
