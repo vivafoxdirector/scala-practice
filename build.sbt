@@ -1,6 +1,6 @@
 name := "scala-practice"
 version := "1.0"
-scalaVersion := "2.12.6"
+scalaVersion := "2.11.12"
 
 libraryDependencies ++= Seq(
     "org.scalikejdbc" %% "scalikejdbc"       % "3.2.2",
@@ -9,7 +9,7 @@ libraryDependencies ++= Seq(
     "ch.qos.logback"  %  "logback-classic"   % "1.2.3",
 
 	// Akka
-	"com.typesafe.akka" %% "akka-actor" % "2.4.2"//,
+	"com.typesafe.akka" %% "akka-actor" % "2.4.10"//,
 
 	// Akka-Http
 	//"com.typesafe.akka" %% "akka-http-experimental" % "2.4.11"
