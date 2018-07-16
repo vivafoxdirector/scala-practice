@@ -6,6 +6,8 @@ package io.yian.implicittest
 // 이 인수가 변환 대상이 된다. 인수가 복수개가 될수 없는 이유이기도 한다(복수개를 변환할 수 없다)
 // ref: https://qiita.com/miyatin0212/items/f70cf68e89e4367fcf2e
 // ref: https://qiita.com/f81@github/items/e8bfab96b4be9e404840
+// ref: https://qiita.com/yotsak83/items/c7db219fd90248288841
+// ref: http://d.hatena.ne.jp/sy-2010/20110314/1300092658
 object ImplicitMain extends App{
     class SuperInt (val i: Int) {
         def square = i * i
