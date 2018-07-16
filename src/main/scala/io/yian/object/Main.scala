@@ -1,4 +1,4 @@
-//package io.yian.`object`
+package io.yian.`object`
 
 class Programmer(val language:String) {
   println("Created Programmer Instance");

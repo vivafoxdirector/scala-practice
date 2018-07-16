@@ -1,3 +1,4 @@
+package io.yian.`sealed`
 // ref : https://gist.github.com/gakuzzzz/10081860
 //-----------------------------------------
 // sealed is useful when pattern match

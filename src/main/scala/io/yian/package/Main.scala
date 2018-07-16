@@ -1,3 +1,4 @@
+package io.yian.`package`
 abstract class Engineer(name:String) {
   println("Engineer name= " + name)
   def this() = this("")
