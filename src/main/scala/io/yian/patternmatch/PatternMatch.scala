@@ -1,4 +1,4 @@
-import io.yian.patternmatch
+package io.yian.patternmatch
 
 object PatternMatch extends App {
   val x = 10

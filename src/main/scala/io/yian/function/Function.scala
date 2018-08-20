@@ -2,6 +2,11 @@
 
 // ref: http://www.atmarkit.co.jp/ait/articles/1204/05/news126_3.html
 // ref: https://gist.github.com/gakuzzzz/10104162
+// ref: https://qiita.com/miyatin0212/items/f70cf68e89e4367fcf2e
+// ref: https://qiita.com/f81@github/items/e8bfab96b4be9e404840
+// ref: https://qiita.com/yotsak83/items/c7db219fd90248288841
+// ref: http://d.hatena.ne.jp/sy-2010/20110314/1300092658
+// http://www.atmarkit.co.jp/ait/articles/1210/04/news129.html
 object Function extends App {
   // Function Object
   // (value name: type_name) => function body
