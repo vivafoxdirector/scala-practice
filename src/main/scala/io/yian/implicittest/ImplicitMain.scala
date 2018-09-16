@@ -1,4 +1,4 @@
-package io.yian.implicittest
+//package io.yian.implicittest
 
 // ImplicitClass는 직접 생성하지 않고 예제와 같이
 // object안에서 생성이 가능하다.
@@ -53,5 +53,22 @@ object ImplicitMain extends App{
 
     implicit val defaultList = List(1,2,3)
     def curryFunc2(x:Int, s:String)(z:Float)(implicit xs:List[Int]):String = (s * x) + z + xs.sum
+    def cal(x:Int, s:String) = s * x
+    println(cal(2, "aaaa"))
     println(curryFunc2(1, "Hoge")(0.3f))
+
+    implicitTest1
+
+    // Method Implicit
+    // 참조: https://codezine.jp/article/detail/2464?p=3
+    def implicitTest1:Unit = {
+      class Car(var name:String, val price:Int)
+
+      case class CostHolder(cost:Int)
+      implicit def priceToCost(in:{def price:Int}) = CostHolder(in.price)
+      var car = new Car("benz", 1000)
+
+      println(car.price)
+      println(car.cost)
+    }
 }
