@@ -96,8 +96,7 @@ object ListTest extends App {
     } yield {
       s"$p, $p2"
     }
-
-    println(opt.getOrElse("none"))
+    //println(opt.getOrElse("none"))
   }
 
   //list_Range
