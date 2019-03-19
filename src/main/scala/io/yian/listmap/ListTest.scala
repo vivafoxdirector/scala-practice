@@ -89,6 +89,7 @@ object ListTest extends App {
 
   def opt_for2:Unit = {
     val list = Range(1,6).toList
+    println(list)
 
     val opt = for {
       p <- list
@@ -97,6 +98,7 @@ object ListTest extends App {
       s"$p, $p2"
     }
     //println(opt.getOrElse("none"))
+    println(opt)
   }
 
   //list_Range
@@ -105,5 +107,5 @@ object ListTest extends App {
   //for_map
   //for_for_flatmap
   //
-  opt_for2
+  opt_for
 }
