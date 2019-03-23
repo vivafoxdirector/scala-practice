@@ -11,5 +11,4 @@ object LazyValTest extends App {
   println(getJSON)
   println(getJSON)
   println(getJSON)
-
 }

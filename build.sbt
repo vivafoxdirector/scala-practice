@@ -11,9 +11,12 @@ libraryDependencies ++= Seq(
     // Akka
     //"com.typesafe.akka" %% "akka-actor" % "2.4.10"//,
     "com.typesafe.akka" %% "akka-actor" % "2.5.21",
-    "com.typesafe.akka" %% "akka-stream" % "2.5.21"
+    "com.typesafe.akka" %% "akka-stream" % "2.5.21",
 
-
+    // scalax
+    //"com.github.scala-incubator.io" %% "scala-io-file" % "0.4.3"
+    // scalaj
+    "org.scalaj" %% "scalaj-http" % "2.4.1"
 // Akka-Http
     //"com.typesafe.akka" %% "akka-http-experimental" % "2.4.11"
 )
