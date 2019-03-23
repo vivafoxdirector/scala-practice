@@ -1,4 +1,5 @@
 // ref: https://qiita.com/skta/items/aef20515f3bdadfb5ad8
+// ref: https://qiita.com/yotsak83/items/d3c1495d83690dd725ef
 class Test private (val name:String)
 object Test {
   def apply(str:String) = {
