@@ -1,4 +1,4 @@
-//package io.yian.`object`
+package io.yian.`object`
 //
 // ref: https://www.atmarkit.co.jp/ait/articles/1204/20/news139_3.html
 
