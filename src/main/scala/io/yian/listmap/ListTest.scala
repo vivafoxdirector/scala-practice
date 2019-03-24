@@ -1,5 +1,8 @@
-object ListTest extends App {
-  def list_Range:Unit = {
+
+// ref: http://bach.istc.kobe-u.ac.jp/lect/ProLang/org/scala-list.html
+object ListTest {
+
+  def listTest01 = {
     val list1 = List("1","2","3","4","5")
 
     // 1부터 6미만 까지
@@ -17,6 +20,22 @@ object ListTest extends App {
     println("head: " + list1.head)
     println("last: " + list1.last)
     println("init: " + list1.init)
+    println(list1.tail.tail.tail.head)
+    var list = List(2, 7, 1, 8)
+    list.head
+    list.tail
+    list.tail.tail.tail.head
+    list.tail.tail.tail.tail
+    3 :: list
+    3 +: list
+    list.length
+    list.size
+    list.isEmpty
+    list.last
+    list.init
+    list :+ 3
+    list ::: list
+    list.reverse
   }
 
   def for_foreach:Unit = {
@@ -101,11 +120,16 @@ object ListTest extends App {
     println(opt)
   }
 
-  //list_Range
-  //for_foreach
-  //for_for_foreach
-  //for_map
-  //for_for_flatmap
-  //
-  opt_for
+  def main(args:Array[String]): Unit = {
+
+    //list_Range
+    //for_foreach
+    //for_for_foreach
+    //for_map
+    //for_for_flatmap
+    //
+    opt_for
+
+    listTest01
+  }
 }
