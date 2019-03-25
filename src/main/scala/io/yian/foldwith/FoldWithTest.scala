@@ -1,8 +1,8 @@
 package io.yian.foldwith
 
+// ref: https://dev.classmethod.jp/server-side/scala-differece-between-fold-and-foldleft/
 // ref: https://qiita.com/t-hiroyoshi/items/ed26cd26eb5a2d3d379b
 // ref: https://dev.classmethod.jp/server-side/scala-foldright-foldleft/
-// ref: https://dev.classmethod.jp/server-side/scala-differece-between-fold-and-foldleft/
 // ref: http://allaboutscala.com/tutorials/chapter-8-beginner-tutorial-using-scala-collection-functions/scala-foldleft-example/
 // ref: http://dwango.github.io/scala_text_previews/trait-tut/collection.html
 object FoldWithTest {
