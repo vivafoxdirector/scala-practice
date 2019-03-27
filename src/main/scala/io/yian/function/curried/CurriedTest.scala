@@ -1,4 +1,7 @@
 // ref: https://gist.github.com/nenono/2523c406735b11ee9b46
+
+// Thread
+// ref: https://twitter.github.io/scala_school/concurrency.html
 object CurriedTest {
 
   def add(x:Int, y:Int, z:Int) = x + y + z
@@ -7,7 +10,9 @@ object CurriedTest {
 
   def curryTest1 = {
     println(sum(1)(2)(3))
-    println(sumCurry(1))
+    val cf = sumCurry(1)
+    println(cf)
+    println(cf(2)(3))
   }
 
   def curryTest2 = {
@@ -46,6 +51,70 @@ object CurriedTest {
   // Change curried function from general function 'cubicVolumnFunction'
   def cubicVolumnFunction(x:Int, y:Int, z:Int) : Int = x * y * z
 
+  //======================================================================
+  // Myself
+  def curriedTest05 = {
+    def addfun(a:Int) = {
+      println(a + a)
+    }
+
+    def curriedFunc(f:(Int) => Unit)(m:Int) = {
+      f(m)
+    }
+
+    val add1 = curriedFunc((l:Int) => {println(l+l)})_
+    add1(10)  // => 20
+    add1(20)  // => 40
+
+    val add2 = curriedFunc(addfun)_
+    add2(10)  // => 20
+    add2(20)  // => 40
+  }
+  //======================================================================
+  def curriedTest06 = {
+    // Curried Thread
+    def curriedFunc(f:(String)=>Unit)(name:String) = {
+      f(name)
+    }
+
+    def executor(s:String) : Unit = {
+      val hello = new Thread(new Runnable {
+        def run() {
+          println(s)
+          Thread.sleep(1000)
+        }
+      })
+      hello.start
+    }
+
+    val thread = curriedFunc(executor)_
+
+    thread("hello")
+    thread("world!")
+  }
+  //======================================================================
+  def curriedTest07 = {
+    def curriedFunc(name:String)(codeBlock: => Unit) = {
+      val thread = new Thread(name) {
+        override def run(): Unit = {
+          codeBlock
+        }
+      }
+      thread.setDaemon(true)
+      thread.start()
+      thread
+    }
+
+    curriedFunc("MyThread") {
+      println("thread...")
+      println("thread...")
+      println("thread...")
+      println("thread...")
+      println("thread...")
+    }
+  }
+  //======================================================================
+
   def main(args: Array[String]) {
     curryTest1
     //curryTest2
@@ -75,5 +144,10 @@ object CurriedTest {
     val cubicVolumnCurried_XY = cubicVolumnCurried_X(3)
 
     println(cubicVolumnCurried_XY(4))
+
+    println("---------------------------------")
+    curriedTest05
+    curriedTest06
+    curriedTest07
   }
 }
