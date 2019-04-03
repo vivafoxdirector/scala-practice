@@ -1,3 +1,4 @@
+import scala.util.Random
 
 // ref: http://bach.istc.kobe-u.ac.jp/lect/ProLang/org/scala-list.html
 object ListTest {
@@ -38,6 +39,13 @@ object ListTest {
     list.reverse
   }
 
+  def listTest02 = {
+    // Random 으로 임의의 값 리스트 취득
+    val list1 = List.fill(10)(Random.nextInt(10))
+    println(list1)
+
+
+  }
   def for_foreach:Unit = {
     val list = List("123","234","345","456","567")
 
@@ -131,5 +139,6 @@ object ListTest {
     opt_for
 
     listTest01
+    listTest02
   }
 }

@@ -73,7 +73,7 @@ object VarianceTest {
     }
 
     // String -> AnyRef 이니까. Item4[AnyRef]는 Item4[String]의 서브로 정의된다.
-    val a = new Other4(new Item4[String]("string"))
+    //val a = new Other4(new Item4[String]("string"))
 
     // AnyRef -> Any 이니까 Item4[Any]는 Item4[AnyRef]의 서브형이 된다.
     val b = new Other4(new Item4[Any]("string"))
