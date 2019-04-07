@@ -2,7 +2,7 @@ package io.yian.function.hyperorder
 
 import java.io.FileInputStream
 
-object HyperOrderTest {
+object HigherOrderTest{
 
   def hyperOrderTest() = {
     val file = "E:\\00.WokrSpace\\git\\yian\\scala-practice\\src\\main\\scala\\io\\yian\\function\\curried\\ReadMe.md"

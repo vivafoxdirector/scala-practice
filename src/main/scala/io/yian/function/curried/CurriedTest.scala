@@ -17,13 +17,12 @@ object CurriedTest {
 
   def curryTest2 = {
     // def로 정의한 메소드는 커리화할 수 없기 때문에 "스페이스 + _"을 이용하여 함수 오브젝트를 취득한다.
-    val addFunc = add _
-    // add _ 라는 것은 add(_,_,_)와 같다
+    val addFunc = add _ // add  _ 의 의미는 add(_,_,_)와 같다.
 
-    val a = addFunc.curried
-    val a1 = a(1)
-    val a2 = a1(1)
-    val a3 = a2(1)
+    val a = addFunc.curried  // curried function으로 바꾼다
+    val a1 = a(2)   // add의 첫번째 인자
+    val a2 = a1(1)  // add의 두번째 인자
+    val a3 = a2(1)  // add의 세번째 인자
 
     println(s"result: ${a1}, ${a2}, ${a3}")
     // StringContext클래스의 메소드호출로 변환됨.
@@ -117,7 +116,7 @@ object CurriedTest {
 
   def main(args: Array[String]) {
     curryTest1
-    //curryTest2
+    curryTest2
 
     val cubicVolumn_X = cubicVolumn(2)_
     println(cubicVolumn_X(3)(4))
