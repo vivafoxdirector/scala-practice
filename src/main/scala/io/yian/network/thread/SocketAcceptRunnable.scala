@@ -1,4 +1,4 @@
-package io.yian.network.echo
+package io.yian.network.thread
 
 import java.io._
 import java.net.Socket

@@ -1,4 +1,4 @@
-package io.yian.network.echo
+package io.yian.network.thread
 
 object ThreadScala {
   def startDaemon(name: String)(codeBlock : => Unit) : Thread = {
