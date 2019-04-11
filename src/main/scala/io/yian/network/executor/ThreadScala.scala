@@ -1,6 +1,7 @@
-package io.yian.network.thread
+package io.yian.network.executor
 
 object ThreadScala {
+
     def startDaemon(name: String)(codeBlock: => Unit): Thread = {
         val thread = new Thread(name) {
             override def run(): Unit = {
@@ -15,4 +16,6 @@ object ThreadScala {
         thread.start
         thread
     }
+
+
 }

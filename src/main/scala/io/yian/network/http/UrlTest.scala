@@ -2,7 +2,6 @@ package io.yian.network.http
 
 import scalaj.http.{Http, HttpResponse}
 
-// ref:
 // ref: https://qiita.com/nekonoprotocol/items/0857b56ba720c853ee62
 
 // scalaj test
