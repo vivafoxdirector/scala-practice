@@ -64,3 +64,7 @@
 
 내용: [事例紹介]Scalaで物流倉庫システム作ったよ
 참조: https://www.slideshare.net/TomokazuMatsushita/scala-79921681
+
+### vd
+내용: プログラマのためのモナド入門 稲見 泰宏 | プログラマのためのモナド入門
+참조: https://www.youtube.com/watch?v=fhuAlDPgi2Q&t=977s
