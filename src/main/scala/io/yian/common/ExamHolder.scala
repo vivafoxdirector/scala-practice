@@ -1,6 +1,6 @@
 package io.yian.common
 
-class ExamFactory(name: String) {
+class ExamHolder(name: String) {
     // List Initialize
     //var factory = List[ExamElement]()
     //val factory = new java.util.ArrayList[ExamElement]
@@ -12,10 +12,10 @@ class ExamFactory(name: String) {
 //    }
 
     def addFunc(name:String, f: => Any) {
-        addFunc(name, "Nothing!", f)
+        addFunc(name, "nop..!", f)
     }
 
-    def addFunc(name:String, desc: String, f: => Unit) {
+    def addFunc(name:String, desc: String, f: => Any) {
         factory ::= new ExamElement(name, desc, f)
     }
 
@@ -37,6 +37,9 @@ class ExamFactory(name: String) {
             // input exam name
             print("num > ")
             var k = scala.io.StdIn.readLine()
+
+            // is space ??
+            if (k == "") return
 
             // check digit
             if (!(k forall{_.isDigit})) return

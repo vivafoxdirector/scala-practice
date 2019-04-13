@@ -1,5 +1,5 @@
-import io.yian.common.ExamSel.exam01
-import io.yian.common.ExamFactory
+import io.yian.common.ExamTest.exam01
+import io.yian.common.ExamHolder
 
 // ref: https://qiita.com/suin/items/2780a9b7d47a14f71e24
 object LazyValTest {
@@ -94,7 +94,7 @@ object LazyValTest {
   }
 
   def main(args:Array[String]) : Unit = {
-    val a = new ExamFactory("lazy")
+    val a = new ExamHolder("lazy")
     a.addFunc("lazyValTest001A", "Not use lazy val example", lazyValTest001A)
     a.addFunc("lazyValTest001B", "Use lazy val example", lazyValTest001B)
     a.addFunc("lazyValTest002A", "Not use lazy val example", lazyValTest002A)

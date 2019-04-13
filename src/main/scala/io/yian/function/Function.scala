@@ -1,3 +1,4 @@
+import io.yian.common.ExamHolder
 //import io.yian.function
 
 // ref: http://www.atmarkit.co.jp/ait/articles/1204/05/news126_3.html
@@ -7,38 +8,39 @@
 // ref: https://qiita.com/yotsak83/items/c7db219fd90248288841
 // ref: http://d.hatena.ne.jp/sy-2010/20110314/1300092658
 // http://www.atmarkit.co.jp/ait/articles/1210/04/news129.html
-object Function extends App {
+object Function {
+
+  def main(args: Array[String]) : Unit = {
+    val a = new ExamHolder("Function")
+    a.addFunc("basefunc0", "base func(x,y)=x+y", println(basefunc0(1,2)))
+    a.addFunc("basefunc1", "val func = (x,y)=>x+y", println(basefunc1(1, 2)))
+    a.addFunc("basefunc2","val func = (int,int)=>Int=(x:Int,y:Int)=>x+y", println(basefunc2(1,2)))
+    a.addFunc("basefunc3","val func:Function2[Int,Int,Int] = (x:Int,y:Int)=>x+y", println(basefunc3(1,2)))
+    a.addFunc("basefunc31","val func:Function1[Int,String] = new Function1[Int, String]", println("basefunc31: " + basefunc31.apply(10)))
+    a.addFunc("basefunc32","val func:(Int)=> String = new Function1[Int, String]", println("basefunc32: " + basefunc32.apply(10)))
+    a.selectFunc
+  }
+
   // Function Object
   // (value name: type_name) => function body
   //
-  def func0(x:Int, y:Int) = x+y
-  println(func0(1, 2))
-
-  val func1 = (x:Int, y:Int) => x + y
-  println(func1(1, 2))
-  println("---------------------------------");
-
-  val func2: (Int, Int) => Int = (x:Int, y:Int) => x + y
-  println(func2(1, 2))
-  println("---------------------------------");
+  def basefunc0(x:Int, y:Int) = x+y
+  val basefunc1 = (x:Int, y:Int) => x + y
+  val basefunc2: (Int, Int) => Int = (x:Int, y:Int) => x + y
 
   // Function0 ~ Function22
   // Function2[param1, param2, return] = (param1:type, param2:type) =>{}
-  val func3:Function2[Int, Int, Int] = (x:Int, y:Int) => {x + y}
-  println(func3(1, 2))
-  println("---------------------------------");
+  val basefunc3:Function2[Int, Int, Int] = (x:Int, y:Int) => {x + y}
 
   // Function is Object
   // ref: https://twitter.github.io/scala_school/ko/basics2.html
-  val func31:Function1[Int,String] = new Function1[Int, String] {
+  val basefunc31:Function1[Int,String] = new Function1[Int, String] {
     def apply(arg:Int):String = arg.toString
   }
-  println("func31: " + func31.apply(10))
 
-  val func32:(Int)=>String = new Function1[Int, String] {
+  val basefunc32:(Int)=>String = new Function1[Int, String] {
     def apply(arg:Int):String = arg.toString
   }
-  println("func32: " + func32.apply(10))
 
   class func33 extends Function1[Int, String] {
     def apply(arg:Int):String = arg.toString
