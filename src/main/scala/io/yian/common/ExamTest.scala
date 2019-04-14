@@ -15,7 +15,7 @@ object ExamTest {
   }
 
   def main(args: Array[String]) : Unit = {
-    val a = new ExamHolder("lazy")
+    val a = new ExamHolder("ExamTest")
     a.addFunc("lazy001", exam01)
     a.addFunc("lazy002", exam02)
     a.addFunc("lazy003", exam03)

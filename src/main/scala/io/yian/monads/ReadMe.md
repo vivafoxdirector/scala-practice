@@ -1,6 +1,10 @@
 # Monads
 
 ## Ref
+
+내용: 한글
+참조: https://github.com/enshahar/BasicFPinScala/blob/master/Intermediate/Monad.md
+
 내용: Doobie example
 참조: http://kazzna.hatenablog.com/entry/2015/12/12/000000
 
