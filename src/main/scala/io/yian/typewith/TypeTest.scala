@@ -28,9 +28,13 @@ object TypeTest {
     x.foreach(i=>println(i))
   }
   //============================================
+ 
+  // Type Parameter 정의
   class TypeParam[T](val t: T) {
     def get: T = this.t
   }
+
+  // 
   def typeTest03 = {
     val stringTypeParam = new TypeParam[String]("test")
     println(stringTypeParam.get)
