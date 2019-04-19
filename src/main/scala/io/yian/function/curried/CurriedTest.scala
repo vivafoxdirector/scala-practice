@@ -113,6 +113,17 @@ object CurriedTest {
     }
   }
   //======================================================================
+  def curriedTest08:Unit = {
+    def log2(msg: => String) : Unit = {
+      println(s"Logg: $msg")
+    }
+
+    def log1(msg : String) : Unit = {
+      println(msg)
+    }
+
+    log2("msg.......")
+  }
 
   def main(args: Array[String]) {
     curryTest1
@@ -148,5 +159,8 @@ object CurriedTest {
     curriedTest05
     curriedTest06
     curriedTest07
+
+
+    curriedTest08
   }
 }
