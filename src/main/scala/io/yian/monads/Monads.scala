@@ -121,13 +121,55 @@ object Monads {
     */
   }
 
+  def mkBoxedFun(f:Int => Boxed[Int]) = (x:Boxed[Int]) => {
+    val value = x.value
+    val value2 = f(value)
+    value2
+  }
+
   def monadTest002:Unit = {
-    o(doubleBoxed, sqrtBoxed)
+    val x = o(mkBoxedFun(doubleBoxed), mkBoxedFun(sqrtBoxed))(initBoxed(8))
+    println(x)
+  }
+
+  // Logged
+  def mkLoggedFun(f:Int => Logged[Int]) = (x:Logged[Int]) => {
+    // x(로그 포함된 값)에서 내부의 값 노출시키기
+    val value = x.value
+
+    // 함수 적용
+    val value2 = f(value)
+    value2
+  }
+  
+  // Logged
+  def monadTest003:Unit = {
+    val x = o(mkLoggedFun(doubleLogged), mkLoggedFun(sqrtLogged))(initLogged(8))
+    println(x)
+  }
+
+  def mkLoggedFunRevised(f:Int => Logged[Int]) = (x:Logged[Int]) => {
+    // x(로그 포함된 값)에서 내부의 값 노출시키기
+    val value = x.value
+    // x에서 로그 가져오기
+    val log = x.log
+    // 함수 적용
+    val value2 = f(value)
+    Logged(value2.value, log:::value2.log)
+  }
+
+  // Logged
+  def monadTest004:Unit = {
+    val x = o(mkLoggedFunRevised(doubleLogged), mkLoggedFunRevised(sqrtLogged))(initLogged(8))
+    println(x)
   }
 
   def main(args:Array[String]) : Unit = {
     monadTest000
     monadTest001
     monadTest002
+
+    monadTest003
+    monadTest004
   }
 }
