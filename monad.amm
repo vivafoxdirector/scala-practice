@@ -1,0 +1,89 @@
+def o[T,U,V](f:T => U, g:U => V) = (x:T) => g(f(x))
+def double(x:Int) = x + x
+double(9)
+def sqrt(x:Int) = Math.sqrt(x).toInt
+sqrt(16)
+o(double, sqrt)(8)
+def wrap(f:Int => Int) = (x:Int) => x + x
+o(wrap(double), wrap(sqrt))(8)
+wrap(double)(8)
+def wrap(f:Int => Int) = (x:Int) => {
+println("x: " + x)
+x + x
+}
+o(wrap(double), wrap(sqrt))(8)
+def double(x : Int) = {
+println("double x: " + x)
+x + x
+}
+o(wrap(double), wrap(sqrt))(8)
+o(wrap(double), wrap(sqrt))(8)
+double(8)
+o(wrap(double), wrap(sqrt))(8)
+sqrt(32)
+def wrap(f:Int => Int) = (x:Int) => {
+f(x)
+}
+o(wrap(double), wrap(sqrt))(8)
+def sqrt(x:Int) = {
+println("sqrt x: " + x)
+Math.sqrt(x).toInt
+}
+o(wrap(double), wrap(sqrt))(8)
+o(double, sqrt)(8)
+def wrap(f:Int => Int) = (x:Int) => {
+val value = f(x)
+value + value
+}
+o(double, sqrt)(8)
+o(wrap(double), wrap(sqrt))(8)
+def doubleBoxed(x:Int):Boxed[Int] = Boxed(x+x)
+case class Boxed[T](value:T)
+def doubleBoxed(x:Int):Boxed[Int] = Boxed(x+x)
+def sqrtBoxed(x:Int):Boxed[Int] = Boxed(Math.sqrt(x).toInt)
+o(doubleBoxed, sqrtBoxed)
+o(doubleBoxed, sqrtBoxed)(8)
+def wrap(f:Int => Int) = (x:Int) => {
+f(x)
+}
+o(wrap(doubleBoxed), wrap(sqrt))(8)
+def initBoxed(x:Int) = Boxed(x)
+o(wrap(doubleBoxed), wrap(sqrt))(initBoxed(8))
+def wrap(f:Int => Int) = (x:Boxed) => {
+val value = x.value
+f(value)
+}
+def wrap(f:Int => Boxed) = (x:Boxed) => {
+val value = x.value
+f(value)
+}
+def wrap(f:Int => Boxed[Int]) = (x:Boxed[Int]) => {
+val value = x.value
+f(value)
+}
+o(wrap(doubleBoxed), wrap(sqrt))(initBoxed(8))
+o(wrap(doubleBoxed), wrap(sqrtBoxed))(initBoxed(8))
+val v = o(wrap(doubleBoxed), wrap(sqrtBoxed))(initBoxed(8))
+v.value
+abstract class MyOption[+A]
+case class MySome[+A](x:A) extends MyOption[A]
+case object MyNone extends MyOption[Nothing]
+class Lazy[T] (value:()=>T) {
+def getValue():T = value()
+}
+case class Logged[T](value:T, log:List[String])
+def initBoxed(x:Int):Boxed[Int] = Boxed(x)
+def initLogged(x:Int):Logged[Int] = Logged(x, List())
+def initMyOption(x:Int):MyOption[Int] = MySome(x)
+def initLazy(x: => Int):Lazy[Int] = new Lazy(() => x)
+def initMyList(x:Int):MyList[Int] = Cons(x, MyNil)
+case class Cons[B](var hd:B, var tl:MyList[B]) extends MyList[B]
+abstract class MyList[+A]
+case class Cons[B](var hd:B, var tl:MyList[B]) extends MyList[B]
+case object MyNil extends MyList[Nothing]
+def double(x:Int) = x + x
+val file = new File("monad.amm")
+import java.io._
+val file = new File("monad.amm")
+val bw = new BufferedWriter(new FileWriter(file))
+val history = repl.history.mkString("\n")
