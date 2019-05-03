@@ -16,6 +16,4 @@ object ThreadScala {
         thread.start
         thread
     }
-
-
 }

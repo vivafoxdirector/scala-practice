@@ -12,6 +12,7 @@ object EchoServer {
         while (true) {
             try {
                 val sc = ss.accept()
+                println("client... accepted")
                 es.execute(new SocketAcceptRunnable(sc))
             } catch {
                 case e : Exception => println(e.getMessage())
