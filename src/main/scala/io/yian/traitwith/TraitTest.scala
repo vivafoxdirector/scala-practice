@@ -1,12 +1,10 @@
 package io.yian.traitwith
 
-trait Developer {
-  def coding = println("Coding....")
-}
-trait Designer {
-  def design = println("Designing...")
-}
-class Staff(name : String) extends Developer
+import io.yian.common.ExamHolder
+
+/**
+  * ref: https://www.atmarkit.co.jp/ait/articles/1206/20/news137.html
+  */
 /************************************/
 trait ProjectManager {
   val budget:Int = 10000000
@@ -159,13 +157,85 @@ SeniorEmployee: SeniorEmployee->Employee->AnyRef->Any
 Manger: Manager->SeniorEmployee->Employee->AnyRef->Any
 Worker: Worker->Manager->SeniorEmployee->JuniorEmployee->Employee->AnyRef->Any
 */
+object TraitTest {
 
-/************************************/
-object Trait extends App {
-  val d = new Staff("Yian") with Designer
-  d.coding
-  d.design
-  println("--------------------------------")
+  def traitTest001() : Unit = {
+    trait Programmer {
+      def config = println("welcome trait!!")
+    }
+    class Person(val name:String) extends Programmer
+    val p = new Person("yian")
+    p.config
+  }
+
+  /**
+    * 인스턴스 생성시 트레이트 mix-in
+    * with 키워드를 사용하여 인스턴스 생성을 한다.
+    */
+  def traitTest002() : Unit = {
+    trait Programmer {
+      def config = println("welcome trait!!")
+    }
+    trait Design {
+      def design = println("design...")
+    }
+    class Person(val name:String) extends Programmer
+
+    // with 키워드 사용
+    val p = new Person("yian") with Design
+    p.design
+    p.config
+  }
+
+  /**
+    * 생성자 호출 순서
+    * 부모 -> 자식 -> traitA -> traitB -> traitC
+    */
+  def traitTest003() : Unit = {
+    class Parent {
+      println("Parent")
+    }
+    class Child extends Parent {
+      println("Child")
+    }
+    trait A {
+      println("trait A")
+    }
+    trait B {
+      println("trait B")
+    }
+    trait C {
+      println("trait C")
+    }
+
+    val c = new Child with A with B with C
+  }
+
+  /**
+    * 상속받는 여러 트레이트의 메소드명이 같으면 에러가 난다.
+    * 이경우 override 키워드를 사용하여 메소드를 정의해야 한다.
+    */
+  def traitTest004() : Unit = {
+    trait Programmer {
+      def writer = println("coding..")
+    }
+
+    trait Writer {
+      def writer : Unit = println("writing...")
+    }
+
+    // 같은 메소드 명을 override하지 않으면 에러가 난다.
+    // class Person extends Programmer with Writer
+
+    class Person extends Programmer with Writer {
+      override def writer = println("writing...document")
+    }
+
+    val p = new Person
+    p.writer
+  }
+
+  /*
   val pm = new Staff("Yian") with ProjectManager
   println("--------------------------------")
   val c = new Child with A with B with C
@@ -201,4 +271,13 @@ object Trait extends App {
   pe.work(60)
   println("--------------------------------")
   val w = new Worker
+  */
+  def main(args: Array[String]) : Unit = {
+    val a = new ExamHolder("Trait")
+    a.addFunc("exerciseTrait001", "traitTest001", traitTest001())
+    a.addFunc("exerciseTrait002", "traitTest002", traitTest002())
+    a.addFunc("exerciseTrait003", "traitTest003", traitTest003())
+    a.addFunc("exerciseTrait004", "traitTest004", traitTest004())
+    a.selectFunc
+  }
 }
