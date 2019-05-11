@@ -5,31 +5,6 @@ import io.yian.common.ExamHolder
 /**
   * ref: https://www.atmarkit.co.jp/ait/articles/1206/20/news137.html
   */
-/************************************/
-trait ProjectManager {
-  val budget:Int = 10000000
-  println("budget=" + budget)
-  def manage = println("ProjectManager...")
-}
-/************************************/
-class Parent {
-  println("Parent")
-}
-
-class Child extends Parent {
-  println("Child")
-}
-
-trait A {
-  println("trait A")
-}
-trait B {
-  println("trait B")
-}
-trait C {
-  println("trait C")
-}
-/************************************/
 trait Author {
   def write1 = println("Author...1")
   def write2 = println("Author...2")
@@ -158,7 +133,10 @@ Manger: Manager->SeniorEmployee->Employee->AnyRef->Any
 Worker: Worker->Manager->SeniorEmployee->JuniorEmployee->Employee->AnyRef->Any
 */
 object TraitTest {
-
+  
+  /**
+    * 기본적인 트레이트 사용방법
+    */
   def traitTest001() : Unit = {
     trait Programmer {
       def config = println("welcome trait!!")
@@ -186,12 +164,30 @@ object TraitTest {
     p.design
     p.config
   }
-
+  
+  /**
+    * 트레이트로 생성자 처리
+    */
+  def traitTest003() : Unit = {
+    trait Programmer {
+      def config = println("welcome trait!!")
+    }
+    class Person(val name:String) extends Programmer
+    
+    trait ProjectManager {
+      val budget:Int = 10000000
+      println("budget=" + budget)
+      def manage = println("ProjectManager...")
+    }
+    
+    // 인스턴스 생성만 해도 트레이트의 생성자가 호출된다.
+    val pm = new Person("Yian") with ProjectManager
+  }
   /**
     * 생성자 호출 순서
     * 부모 -> 자식 -> traitA -> traitB -> traitC
     */
-  def traitTest003() : Unit = {
+  def traitTest004() : Unit = {
     class Parent {
       println("Parent")
     }
@@ -215,7 +211,7 @@ object TraitTest {
     * 상속받는 여러 트레이트의 메소드명이 같으면 에러가 난다.
     * 이경우 override 키워드를 사용하여 메소드를 정의해야 한다.
     */
-  def traitTest004() : Unit = {
+  def traitTest005() : Unit = {
     trait Programmer {
       def writer = println("coding..")
     }
@@ -236,10 +232,6 @@ object TraitTest {
   }
 
   /*
-  val pm = new Staff("Yian") with ProjectManager
-  println("--------------------------------")
-  val c = new Child with A with B with C
-  println("--------------------------------")
   val r = new Reporter
   r.write1
   r.write2

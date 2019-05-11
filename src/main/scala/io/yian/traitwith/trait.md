@@ -134,9 +134,48 @@ repl> p.write
 ```
 
 ## 트레이트에서 [super] 사용
+클래스 상속과 마찬가지로 트레이트도 [super]키워드를 사용하면 믹스인 한 트레이트 메소드를 호출 할 수 있다.
+그럼 여기서 Person클래스에 override한 write내에서 super를 사용하여 믹스인한 트레이트 write를 호출하면 어떻게 되는지 알아본다.
+```scala
+class Person extends Programmer with Writer {
+    override def write = super.write
+}
+```
+위 예제에서 호출되는 메소드는 가장 우측 with에 지정된 트레이트(이경우 [Writer]) 메소드가 호출된다.
+```scala
+repl> val p = new Person
+repl> p.write
 
- 
- 
+```
+여기서 가장 우측에 지정된 트레이트 메소드가 아닌 임의의 트레이트 메소드를 호출하고 싶은 경우 아래와 같은 형식으로 호출 할 수 있다.
+```scala
+super[트레이트명].메소
+```
+Programmer트레이트의 write를 호출하면 아래와 같다.
+```scala
+class Person extends Programmer with Writer {
+    override def write = super[Programmer].write
+}
+```
+
+## 트레이트 단독 사용
+지금까지 Person클래스를 사용해서 인스턴스화하였지만, 트레이트 자체만으로 인스턴스화 할 수 있다.
+아래의 예는 Programmer트레이트를 지정해서 인스턴스화 한다.
+```scala
+repl> val p = new Programmer{}
+repl> p.write
+```
+트레이트 뒤에 [{}]을 붙여서 단독으로 사용할 수 있다. 이거은 Programmer트레이트를 믹스인한 무명 클래스 인스턴스를 만든다는 의미 이다.
+만일 Programmer트레이트의 write가 추상메소드 라면 아래와 같이 인스턴스화하는 타이밍에 정의 할 수 있다.
+
+```scala
+trait Programmer {
+    def write
+}
+> val p = new Programmer { def write = println("coding...")}
+
+```
+
 ### REF
 https://qiita.com/chara06ken/items/8e6b26d5857d52bbece5
 https://qiita.com/f81@github/items/5b96af593812286eec49
