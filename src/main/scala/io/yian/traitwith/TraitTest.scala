@@ -5,26 +5,6 @@ import io.yian.common.ExamHolder
 /**
   * ref: https://www.atmarkit.co.jp/ait/articles/1206/20/news137.html
   */
-trait Author {
-  def write1 = println("Author...1")
-  def write2 = println("Author...2")
-  def write3 = println("Author...3")
-}
-trait Writer {
-  def write1 = println("Writer...1")
-  def write2 = println("Writer...2")
-  def write3 = println("Writer...3")
-}
-// class Reporter extends Author with Writer  // => error occured
-class Reporter extends Author with Writer {
-  override def write1 = println("Repoter..1")
-  override def write2 = super.write2
-  override def write3 = super[Author].write3
-}
-/************************************/
-trait Document {
-  def write
-}
 /************************************/
 trait T1 {
   def t1 = println("t1")
@@ -42,31 +22,6 @@ trait K2 {
 class K extends K1 with K2 {
   def write = println("write")
   def record = println("record")
-}
-/************************************/
-abstract class Engineer {
-  println("class Engineer constructor")
-  def work(time:Int)
-}
-
-class Member extends Engineer {
-  println("class Person constructor")
-
-  def work(time:Int) = {
-    println("Member#work start")
-    println("One task"+time+" started...")
-    println("Member#work end")
-  }
-}
-/************************************/
-trait Coder extends Engineer {
-  println("trait Coder constructor")
-
-  abstract override def work(time:Int) = {
-    println("Coder#work start")
-    super.work(time - 15)
-    println("Coder#work end")
-  }
 }
 /************************************/
 trait Programmer {
@@ -231,27 +186,110 @@ object TraitTest {
     p.writer
   }
 
+  /**
+   * Use [super] keyword
+   */ 
+  def traitTest006() : Unit = {
+    trait Author {
+      def write1 = println("Author...1")
+      def write2 = println("Author...2")
+      def write3 = println("Author...3")
+    }
+    trait Writer {
+      def write1 = println("Writer...1")
+      def write2 = println("Writer...2")
+      def write3 = println("Writer...3")
+    }
+    // class Reporter extends Author with Writer  // => error occured
+    class Reporter extends Author with Writer {
+      override def write1 = println("Repoter..1")
+      // use method of Writer
+      override def write2 = super.write2
+
+      // specified trait as Author
+      override def write3 = super[Author].write3
+    }
+    val r = new Reporter
+    r.write1
+    r.write2
+    r.write3
+  }
+
+  /**
+   * make instance of trait
+   */
+  def traitTest007() : Unit = {
+    trait Author {
+      def write1 = println("Author...1")
+      def write2 = println("Author...2")
+      def write3 = println("Author...3")
+    }
+    // make instance of trait
+    val a = new Author{}
+    a.write1
+  }
+
+  // 
+  def traitTest008() : Unit = {
+    abstract class Engineer {
+      println("class Engineer constructor")
+      def work(time:Int)
+    }
+    
+    class Member extends Engineer {
+      println("class Person constructor")
+    
+      def work(time:Int) = {
+        println("Member#work start")
+        println("One task"+time+" started...")
+        println("Member#work end")
+      }
+    }
+    val m = new Member
+    m.work(60)
+  }
+
+  def traitTest009() : Unit = {
+    abstract class Engineer {
+      println("class Engineer constructor")
+      def work(time:Int)
+    }
+    
+    class Member extends Engineer {
+      println("class Person constructor")
+    
+      def work(time:Int) = {
+        println("Member#work start")
+        println("One task"+time+" started...")
+        println("Member#work end")
+      }
+    }
+    trait Coder extends Engineer {
+      println("trait Coder constructor")
+    
+      abstract override def work(time:Int) = {
+        println("Coder#work start")
+        super.work(time - 15)
+        println("Coder#work end")
+      }
+    }
+    val co = new Member with Coder
+    co.work(60)
+  }
+    
+  def traitTest0XX() : Unit = {
+    trait Document {
+      // abstract method
+      def write
+    }
+    val dc = new Document{def write = println("Document...")}
+    dc.write
+  }
   /*
-  val r = new Reporter
-  r.write1
-  r.write2
-  r.write3
-  println("--------------------------------")
-  val a = new Author{}
-  a.write1
-  println("--------------------------------")
-  val dc = new Document{def write = println("Document...")}
-  dc.write
   println("--------------------------------")
   val t = new T1 with T2
   t.t1
   t.t2
-  println("--------------------------------")
-  val m = new Member
-  m.work(60)
-  println("--------------------------------")
-  val co = new Member with Coder
-  co.work(60)
   println("--------------------------------")
   val p = new Person
   p.sayName
@@ -270,6 +308,11 @@ object TraitTest {
     a.addFunc("exerciseTrait002", "traitTest002", traitTest002())
     a.addFunc("exerciseTrait003", "traitTest003", traitTest003())
     a.addFunc("exerciseTrait004", "traitTest004", traitTest004())
+    a.addFunc("exerciseTrait005", "traitTest005", traitTest005())
+    a.addFunc("exerciseTrait006", "traitTest006", traitTest006())
+    a.addFunc("exerciseTrait007", "traitTest007", traitTest007())
+    a.addFunc("exerciseTrait008", "traitTest008", traitTest008())
+    a.addFunc("exerciseTrait009", "traitTest009", traitTest009())
     a.selectFunc
   }
 }
