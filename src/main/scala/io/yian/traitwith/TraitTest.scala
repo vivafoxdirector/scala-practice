@@ -55,15 +55,15 @@ class Man(n:String, j:String, g:String) extends Human with Job with Grade {
   }
 }
 /************************************/
-trait Agiler extends Engineer {
-  println("trait Agiler constructor")
-
-  abstract override def work(time:Int) = {
-    println("Agiler#work start")
-    super.work(time/ 2)
-    println("Agiler#work end")
-  }
-}
+//trait Agiler extends Engineer {
+//  println("trait Agiler constructor")
+//
+//  abstract override def work(time:Int) = {
+//    println("Agiler#work start")
+//    super.work(time/ 2)
+//    println("Agiler#work end")
+//  }
+//}
 /************************************/
 class Employee {
   println("Employee")

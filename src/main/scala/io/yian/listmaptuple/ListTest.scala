@@ -115,7 +115,7 @@ object ListTest {
   }
 
   def opt_for2:Unit = {
-    val list = Range(1,6).toList
+    val list = Range(1, 6).toList
     println(list)
 
     val opt = for {
