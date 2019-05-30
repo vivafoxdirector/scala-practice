@@ -114,6 +114,36 @@ object FlatMapTest {
   }
 
   //============================================
+
+  // 제너레이터가 한개인 경우
+  def flatMapTest001: Unit = {
+    // for 루프틑 foreach로 변환되서 실행된다.
+    for (i <- 1 to 5) println(i)
+
+    // 위와 같다.
+    (1 to 5).foreach(i => println(i))
+
+    // 다른 방식은 내포 표기법이다.
+    // for yield는 map 과 같다
+    val r1 = for (i <- 1 to 5) yield i + 1
+    println(r1)
+
+    val r2 = (1 to 5).map(i => i + 1)
+    println(r2)
+  }
+
+
+  // 제너레이터가 복수개인 경우
+  def flatMapTest002:Unit = {
+    //
+    for {
+      a <- 1 to 5
+      b <- Seq("A", "B")
+    } yield {
+      println(s"$a-$b")
+    }
+  }
+
   def main(args: Array[String]) = {
     flatMapTest02_AsIs1
     flatMapTest02_AsIs2
@@ -123,5 +153,7 @@ object FlatMapTest {
     flatMapTest02_ToBe2
     flatMapTest02_ToBe3
     println()
+
+    flatMapTest001
   }
 }
