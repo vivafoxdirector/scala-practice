@@ -11,6 +11,9 @@ import io.yian.common.ExamHolder
 
 // Fold
 // ref: https://qiita.com/Kazuhiro23/items/3a1a21544d71b5c76e78
+
+// fold/foldLeft/foldRight
+// ref: https://code.i-harness.com/ja-jp/q/5f6d9a
 object FoldWithTest {
 
   //=======================================================
@@ -29,6 +32,29 @@ object FoldWithTest {
     println(changedText)  // 안된다.
   }
   //=======================================================
+  // fold and foldLeft and foldRight
+  // ref: https://code.i-harness.com/ja-jp/q/5f6d9a
+  def foldTest000 : Unit = {
+    // fold
+    val l = List(5,6,3,2,7,4,2,1)
+    l.fold(0) {
+      (x, y) => println("fold left: " + x + ", right: " + y)
+        x + y
+    }
+
+    // foldLeft
+    l.foldLeft(0) {
+      (x, y) => println("foldLeft left: " + x + ", right: " + y)
+        x + y
+    }
+
+    // foldRight
+    l.foldRight(0) {
+      (x, y) => println("foldRight left: " + x + ", right: " + y)
+        x + y
+    }
+  }
+
   // ref: https://qiita.com/Kazuhiro23/items/3a1a21544d71b5c76e78
   def foldTest001 = {
     // have money
@@ -42,9 +68,11 @@ object FoldWithTest {
     val message = maybeMoney.fold("i dont hav money!") { money => s"${money}dollors i have"}
     println(message)
   }
+
   //=======================================================
   def main(args:Array[String]) = {
     val a = new ExamHolder("FoldLeft")
+    a.addFunc("foldTest000", "compare fold and foldLeft and foldRight", foldTest000)
     a.addFunc("foldTest001", "foldTest", foldTest002)
     a.addFunc("foldTest002", "foldTest", foldTest002)
     a.addFunc("foldLeftTest001", "using foreach", foldLeftTest001)
