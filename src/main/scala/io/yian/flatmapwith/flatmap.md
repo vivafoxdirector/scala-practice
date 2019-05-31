@@ -1,5 +1,42 @@
 # for, foreach, map, flatMap
 
+# flatMap
+flatMap을 실행하면 내부적으로 flattern 과 map을 실행하게 된다.
+
+## flattern 기능확인
+map을 사용하지 않고 flatten 의 동작부터 확인해 본다. flatten은 사전적 의미로 
+```scala
+Seq(Seq(1,2,3), Seq(4), Seq(5,6)) flatMap{ x => x}
+```
+결과는 Seq(1,2,3,4,5,6)이 된다.
+비슷한 것으로
+```scala
+Seq(Seq(1,2,3), Seq(), Seq(5,6)) flatMap {x => x}
+```
+결과는 Seq(1,2,3,5,6)이 된다.
+비어있는Seq는 flatten이 내부적으로 처리하여 무시가 된다. 
+
+그러면 여기서 map처리를 하지 않고 flatten을 사용하여 본다.
+```scala
+Seq(Seq(1,2,3),Seq(),Seq(5,6)) flatten
+```
+
+## flatten + map
+다음은 map을 확인해 본다.
+```scala
+Seq(Seq(1,2,3),Seq(),Seq(5,6)) flatMap { x => 10+: x }
+```
+결과는 Seq(10,1,2,3,10,10,5,6) 이 된다.
+각 Seq의 최초의 요소 앞에 10을 추가해서 새로운 Seq로 변환된다. 정리하면 아래와 같은 순서로 flatMap이 수행된다.
+```scala
+Seq(Seq(1,2,3),Seq(),Seq(5,6))
+↓   // map(각 Seq의 선두에 10을 추가)
+Seq(Seq(10,1,2,3),Seq(10),Seq(10,5,6))
+↓   // flatten
+Seq(10,1,2,3,10,10,5,6)
+
+``` 
+
 # 개요
 for 문이 실제로 어떤형식으로 동작이 되는지 알아본다.
 
@@ -87,9 +124,9 @@ e.flatMap(p1 => e2.map(p2 => expr))
 결국, flatMap/map 은 결과 값을 반환 받는다.
 여러개의 제너레이터(p <- e)가 있는 경우, 제일 마지막 제너레이터가 map이 되고 나머지는 flatMap로 전재된다.
 
-
-
 # 참조
+* 내용: flatMapをマスターする
+    * 참조: https://qiita.com/mtoyoshi/items/c95cc88de2910945c39d
 * 내용: for式のforeach/flatMap(map)展開について
     * 참조: https://qiita.com/harry0000/items/e37ca3bfb68df839bf55
 * 내용: for文はループじゃない!? 〜徹底理解：Scalaのfor文（２）
