@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import scala.concurrent._
 import ExecutionContext.Implicits.global
 import scala.concurrent.duration.Duration
@@ -73,16 +72,4 @@ object FutureTest {
     futureTest003
     //futureTest004
   }
-=======
-package io.yian.futurenpromise
-
-// ref: https://qiita.com/mtoyoshi/items/08766629abea6eb8e4bc
-object FutureTest {
-
-    def futureTest001 : Unit = {}
-
-    def main(args :Array[String]) : Unit = {
-
-    }
->>>>>>> 2703cda176cc42e70a544250351715e3beb15c6e
 }
