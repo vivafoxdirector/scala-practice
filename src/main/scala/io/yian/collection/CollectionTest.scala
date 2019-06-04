@@ -5,6 +5,7 @@ package io.yian.collection
 
 // Tuple
 // ref: https://qiita.com/f81@github/items/a8419532c316d190782d
+// ref: https://syttru.hatenadiary.org/entry/20081029/1225301251
 object CollectionTest {
 
     // Tuple
@@ -30,6 +31,16 @@ object CollectionTest {
         printf("index = %s \n", value._2)
     }
     //-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-↑-
+
+    // 튜플은 최대 22개의 요소를 갖는다. 그 이상을 사용하면 에러가 발생된다.
+    def TupleTest003: Unit = {
+        def get = {
+            (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22)
+        }
+        val tuple = get
+        println(tuple._1)
+        println(tuple._22)
+    }
 
     // Map의 요소는 Tuple이다. Tuple을 반환한다.
     def ForEachMapTest001: Unit = {
@@ -57,6 +68,7 @@ object CollectionTest {
     def main(args:Array[String]) : Unit = {
         TupleTest001
         TupleTest002
+        TupleTest003
 
         ForEachMapTest001
         ForEachMapTest002
