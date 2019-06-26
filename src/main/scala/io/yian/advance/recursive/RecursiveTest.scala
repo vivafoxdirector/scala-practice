@@ -1,5 +1,8 @@
 package io.yian.advance.recursive
 
+/**
+  * ref: http://sofksoak.hatenadiary.jp/entry/20120416/p1
+  */
 object RecursiveTest {
     def sum(head:Int, list:List[Int]) : Int = {
         print(head + " ")
