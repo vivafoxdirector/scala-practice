@@ -1,7 +1,8 @@
 import scala.concurrent.Future
 import scala.concurrent.ExecutionContext.Implicits.global
 
-// https://dwango.github.io/scala_text/future-and-promise.html
+// ref: https://dwango.github.io/scala_text/future-and-promise.html
+// ref: https://qiita.com/mtoyoshi/items/08766629abea6eb8e4bc
 
 object FutureSample extends App {
   val s = "Hello"

@@ -1,8 +1,9 @@
 package io.yian.flatmapwith
 
+import io.yian.common.ExamHolder
+
 import scala.util.Random
 
-// ref: https://dev.classmethod.jp/server-side/scala-learn-flatmap/
 // ref: https://qiita.com/mtoyoshi/items/c95cc88de2910945c39d
 // ref: https://dev.classmethod.jp/server-side/scala-learn-flatmap/
 // ref: http://ym.hatenadiary.jp/entry/2016/03/30/092337
@@ -10,6 +11,48 @@ import scala.util.Random
 // ref: https://alvinalexander.com/scala/collection-scala-flatmap-examples-map-flatten
 // ref: http://www.brunton-spall.co.uk/post/2011/12/02/map-map-and-flatmap-in-scala/
 object FlatMapTest {
+  // 제너레이터가 한개인 경우
+  def flatMapTest001: Unit = {
+    // for 루프틑 foreach로 변환되서 실행된다.
+    for (i <- 1 to 5) println(i)
+
+    // 위와 같다.
+    (1 to 5).foreach(i => println(i))
+
+    // 위의 for루프를 아래와 같이 사용할 수 있다.
+    // 다른 방식은 내포 표기법이다.
+    // for yield는 map 과 같다
+    val r1 = for (i <- 1 to 5) yield i + 1
+    println(r1)
+
+    val r2 = (1 to 5).map(i => i + 1)
+    println(r2)
+  }
+
+  // 제너레이터가 복수개인 경우
+  def flatMapTest002:Unit = {
+    // 아래의 예제의 결과값은 모두 같다.
+
+    // 제너레이터가 복수개사용 for 루프
+    for (a <- 1 to 5; b <- Seq("A","B")) yield println(s"$a-$b")
+    for {
+      a <- 1 to 5
+      b <- Seq("A", "B")
+    } yield {
+      println(s"$a-$b")
+    }
+
+    // 위의 for루프를 아래와 같이 사용할 수 있다.
+    // 제너레이터가 복수개 사용 flatMap
+    val e1 = 1 to 5
+    val e2 = Seq("A","B")
+
+    // p1 <- e1 를 전개
+    e1.flatMap(p1 => for {p2 <- e2} yield println(s"$p1-$p2"))
+
+    // p1 <- e1 / p2 -> e2 둘다 전개
+    e1.flatMap(p1 => e2.map(p2 => s"$p1-$p2"))
+  }
 
   def flatMapTest01 = {
     var a = Seq(Seq(1,2,3), Seq(4), Seq(5,6)) flatMap{ x => x}
@@ -113,15 +156,17 @@ object FlatMapTest {
     findBestFriehd(userId).flatMap(findBestFriehd).contains(userId)
   }
 
-  //============================================
-  def main(args: Array[String]) = {
-    flatMapTest02_AsIs1
-    flatMapTest02_AsIs2
 
-    flatMapTest02_ToBe
-    flatMapTest02_ToBe1
-    flatMapTest02_ToBe2
-    flatMapTest02_ToBe3
-    println()
+  def main(args: Array[String]) = {
+    val a = new ExamHolder("Function")
+    a.addFunc("flatMapTest001", "제너레이터 1개", flatMapTest001)
+    a.addFunc("flatMapTest002", "제너레이터 복수개", flatMapTest002)
+    a.addFunc("flatMapTest02_AsIs1", "flatMapTest02_AsIs1", flatMapTest02_AsIs1)
+    a.addFunc("flatMapTest02_AsIs2", "flatMapTest02_AsIs2", flatMapTest02_AsIs2)
+    a.addFunc("flatMapTest02_ToBe", "flatMapTest02_ToBe", flatMapTest02_ToBe)
+    a.addFunc("flatMapTest02_ToBe1", "flatMapTest02_ToBe1", flatMapTest02_ToBe1)
+    a.addFunc("flatMapTest02_ToBe2", "flatMapTest02_ToBe2", flatMapTest02_ToBe2)
+    a.addFunc("flatMapTest02_ToBe3", "flatMapTest02_ToBe3", flatMapTest02_ToBe3)
+    a.selectFunc
   }
 }
