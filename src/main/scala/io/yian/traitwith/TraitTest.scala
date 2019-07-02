@@ -55,6 +55,11 @@ class Man(n:String, j:String, g:String) extends Human with Job with Grade {
   }
 }
 /************************************/
+abstract class Engineer {
+  println("class Engineer constructor")
+  def work(time:Int)
+}
+
 trait Agiler extends Engineer {
   println("trait Agiler constructor")
 

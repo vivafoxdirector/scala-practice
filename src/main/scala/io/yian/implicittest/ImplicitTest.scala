@@ -1,41 +1,46 @@
+package io.yian.implicittest
+
 import java.text.SimpleDateFormat
-//package io.yian.implicittest
+import io.yian.common.ExamHolder
 
 // ImplicitClass는 직접 생성하지 않고 예제와 같이
 // object안에서 생성이 가능하다.
 // 그리고 implicit class 생성자는 단 하나의 인수만을 가지고
 // 이 인수가 변환 대상이 된다. 인수가 복수개가 될수 없는 이유이기도 한다(복수개를 변환할 수 없다)
+// ref: https://www.atmarkit.co.jp/ait/articles/1208/24/news138.html
 // ref: https://qiita.com/miyatin0212/items/f70cf68e89e4367fcf2e
 // ref: https://qiita.com/f81@github/items/e8bfab96b4be9e404840
 // ref: https://qiita.com/yotsak83/items/c7db219fd90248288841
 // ref: http://d.hatena.ne.jp/sy-2010/20110314/1300092658
 object ImplicitTest {
-    class SuperInt (val i: Int) {
-        def square = i * i
-    }
-
     def implicitTest01 = {
+        class SuperInt (val i: Int) {
+            def square = i * i
+        }
+        
         implicit def intToSuper(i:Int): SuperInt = new SuperInt(i);
 
         println(1000.square)
         println("1000".toInt)
     }
     //============================================
-    implicit def intToString(num:Int):String = {
-        num.toString
-    }
     def implicitTest02() : Unit = {
+        implicit def intToString(num:Int):String = {
+            num.toString
+        }
+
         val str:String = 10 // String타입에 Int값 주입하면 에러!!
         // 이를 가능하게 하기 위해 implicit 함수를 이용하여
         // 묵시적 형변환을 한다
         println(str)
     }
     //============================================
-    implicit def dateToString(date:java.util.Date) :String = {
-        var sdf = new SimpleDateFormat("yyyyMMddHHmmss")
-        sdf.format(date);
-    }
     def implicitTest03() : Unit = {
+        implicit def dateToString(date:java.util.Date) :String = {
+            var sdf = new SimpleDateFormat("yyyyMMddHHmmss")
+            sdf.format(date);
+        }
+
         var date:String = new java.util.Date();
         println(date)
     }
@@ -105,17 +110,14 @@ object ImplicitTest {
     }
     //===========================================================
     def main(args:Array[String]) = {
-        println("start 1===================")
-        implicitTest01
-        println("start 2===================")
-        implicitTest02
-        println("start 3===================")
-        implicitTest03
-        println("start 4===================")
-        implicitTest04
-        println("start 5===================")
-        implicitTest05
-        println("start 6===================")
-        implicitTest06
+        val a = new ExamHolder("Implicit")
+        a.addFunc("implicit001", "intToSuper", implicitTest01)
+        a.addFunc("implicit002", "intToString", implicitTest02)
+        a.addFunc("implicit003", "dateToString", implicitTest03)
+        a.addFunc("implicit004", "dateToString", implicitTest04)
+        a.addFunc("implicit005", "defaultInt, defaultString", implicitTest05)
+        a.addFunc("implicit006", "defaultList", implicitTest06)
+        a.addFunc("implicit007", "Method Implicit", implicitTest07)
+        a.selectFunc
     }
 }
