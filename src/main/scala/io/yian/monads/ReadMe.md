@@ -2,6 +2,12 @@
 
 ## Ref
 
+내용: 스칼라 나이트 
+참조: https://gist.github.com/seoh/573bd797e29504017c5fa54de124a089
+
+내용: 기술 블로그 <==
+참조: https://leadsoftkorea.github.io/2016/03/03/monad-programming-with-scala-future/
+
 내용: 한글
 참조: https://github.com/enshahar/BasicFPinScala/blob/master/Intermediate/Monad.md
 
@@ -68,6 +74,7 @@
 
 내용: [事例紹介]Scalaで物流倉庫システム作ったよ
 참조: https://www.slideshare.net/TomokazuMatsushita/scala-79921681
+
 
 ### vd
 내용: プログラマのためのモナド入門 稲見 泰宏 | プログラマのためのモナド入門
