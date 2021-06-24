@@ -5,7 +5,7 @@ import java.io.FileInputStream
 object HigherOrderTest{
 
   def hyperOrderTest() = {
-    val file = "E:\\00.WokrSpace\\git\\yian\\scala-practice\\src\\main\\scala\\io\\yian\\function\\curried\\ReadMe.md"
+    val file = "D:\\git\\yian\\scala-practice\\src\\main\\scala\\io\\yian\\function\\curried\\ReadMe.md"
     val in = new FileInputStream(file)
     read(in, (l:String)=>{println(l)})
   }
